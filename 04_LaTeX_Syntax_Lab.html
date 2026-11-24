@@ -8,6 +8,8 @@
 <style>
 :root{--ink:#e8f1ff;--muted:#93a5be;--cyan:#48d9e8;--purple:#a596ff;--line:#283b54;--bg:#080f1d;--panel:#101d31;--panel2:#0b1729;--good:#80e6c7;--warm:#ffd199}*{box-sizing:border-box}html{min-height:100%;scroll-behavior:smooth}body{margin:0;color:var(--ink);font:15px/1.55 'Segoe UI',system-ui,sans-serif;background:radial-gradient(ellipse at 75% -15%,#182c51 0,transparent 48%),radial-gradient(ellipse at -15% 90%,#291c47 0,transparent 42%),var(--bg);min-height:100vh}body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(to bottom,black,transparent 92%)}button,textarea{font:inherit}button{cursor:pointer}button:focus-visible,textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}.shell{max-width:1460px;margin:0 auto;padding:30px clamp(16px,4vw,52px) 42px}.eyebrow{font:700 11px/1.6 Consolas,'Courier New',monospace;letter-spacing:.18em;color:var(--cyan);text-transform:uppercase}.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:26px;border-bottom:1px solid #37506a}.brand{display:flex;align-items:center;gap:18px}.logo{width:52px;height:52px;display:grid;place-items:center;border:1px solid #4dd9ed77;background:linear-gradient(150deg,#173954,#12203a);color:#adf6ff;box-shadow:inset 0 0 18px #48d9e828,0 0 26px #48d9e817;border-radius:13px;font:800 21px Consolas,monospace}.brand h1{margin:1px 0 0;font-size:clamp(23px,3.2vw,34px);font-weight:850;line-height:1.1;letter-spacing:-.04em}.brand h1 span{color:var(--cyan)}.top-note{font:12px Consolas,monospace;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:10px 15px;white-space:nowrap}.top-note b{color:var(--good)}.lede{margin:20px 0 25px;max-width:850px;color:#aabbd0}.layout{display:grid;grid-template-columns:218px minmax(0,1fr) 260px;gap:18px;align-items:start}.panel{border:1px solid #2c405b;background:linear-gradient(165deg,#122139ef,#0b182be8);border-radius:17px;box-shadow:0 22px 40px #0003;overflow:hidden}.sidebar{padding:18px 12px;position:sticky;top:18px}.sidebar .eyebrow{padding:5px 13px 13px}.mode{display:flex;align-items:center;gap:11px;border:1px solid transparent;color:#b3c3d8;background:transparent;text-align:left;width:100%;border-radius:10px;padding:13px 12px;margin:4px 0;transition:.15s}.mode:hover{background:#1c3048;color:#fff}.mode.active{background:linear-gradient(90deg,#123448,#202c4b);border-color:#48d9e84c;color:white;box-shadow:inset 3px 0 var(--cyan)}.mode .ico{display:grid;place-items:center;border-radius:7px;width:30px;height:30px;font:700 17px Consolas,monospace;color:var(--cyan);background:#1b374b}.mode strong{display:block;font-size:14px}.mode small{display:block;color:#8197b2;font-size:11px}.side-divider{height:1px;background:#283d54;margin:22px 12px}.side-copy{color:#90a6bc;font-size:12px;padding:0 12px}.center-panel{min-height:610px;position:relative}.center-panel::before{position:absolute;content:"";height:2px;background:linear-gradient(90deg,transparent,var(--cyan),var(--purple),transparent);top:0;left:0;right:0}.pane-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:21px 24px 16px;border-bottom:1px solid #263b56}.pane-header h2{font-size:20px;margin:3px 0 0;letter-spacing:-.02em}.tiny-tag{font:11px Consolas,monospace;color:#95adca;border:1px solid #35516a;padding:7px 9px;border-radius:6px;white-space:nowrap}.task-body{padding:26px}.task-title{font-weight:750;font-size:20px;line-height:1.3;margin:0 0 7px}.prompt{color:#bfd0e4;margin:0 0 22px}.target-wrap{border:1px solid #386377;background:radial-gradient(ellipse at top,#13304699,#0d1a2b);border-radius:12px;min-height:123px;padding:16px 22px;display:grid;align-content:center;margin:0 0 21px;position:relative}.target-wrap .eyebrow{position:absolute;top:9px;left:14px;font-size:10px}.math-target{font-size:27px;min-height:55px;display:flex;align-items:center;justify-content:center;overflow-x:auto;padding-top:11px}.codefault{margin:-7px 0 18px;padding:15px 17px;border:1px solid #6e536d;background:#33233a63;color:#f5c7db;border-radius:10px;font:14px/1.5 Consolas,monospace;white-space:pre-wrap;overflow:auto}.label-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 7px}.label-row label{font:700 11px Consolas,monospace;letter-spacing:.11em;color:#93bed5}.micro{font:11px Consolas,monospace;color:#768da9}textarea{width:100%;min-height:91px;resize:vertical;border:1px solid #3d5b79;border-radius:10px;color:#e5fbff;background:#081525;padding:14px 15px;font:15px/1.65 Consolas,'Courier New',monospace;caret-color:var(--cyan)}textarea::placeholder{color:#60778f}.keys{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 19px}.key{border:1px solid #375067;border-radius:6px;background:#1b2b40;color:#bddcea;padding:5px 8px;font:12px Consolas,monospace}.key:hover{border-color:var(--cyan);color:white}.actions{display:flex;flex-wrap:wrap;align-items:center;gap:9px}.btn{border-radius:9px;padding:11px 15px;border:1px solid #48617b;background:#172b42;color:#e7f4ff;font-weight:700;font-size:13px;transition:background .15s,transform .15s}.btn:hover{background:#233d56}.btn:active{transform:scale(.98)}.btn.primary{background:linear-gradient(120deg,#5ed2e6,#8cafff);color:#061324;border:none;box-shadow:0 8px 21px #43c8ee24}.btn.primary:hover{filter:brightness(1.07)}.btn.next{margin-left:auto}.feedback{margin-top:19px;padding:14px 16px;border:1px solid #36516b;background:#14253a;border-radius:9px;color:#cfdfed;min-height:56px;display:none}.feedback.show{display:block}.feedback.ok{border-color:#2c7b70;background:#10312f;color:#a6f3d8}.feedback.warn{border-color:#907345;background:#352c21;color:#ffe4b8}.feedback strong{display:block;margin-bottom:2px}.answer-block{display:block;margin-top:8px;padding:9px;background:#061521;border-radius:6px;color:#d8f6fc;overflow:auto;white-space:pre-wrap;font:13px/1.5 Consolas,monospace}.right{padding:18px}.right h3{font-size:15px;margin:8px 0 13px}.live-frame{min-height:120px;border-radius:10px;border:1px solid #314960;background:#0a1627;display:grid;place-items:center;padding:14px 10px;overflow:auto;font-size:22px}.right .caption{font-size:12px;color:#8da3bd;margin:7px 0 20px}.ref-grid{display:grid;gap:1px;margin-top:12px;background:#2a4058;border:1px solid #2a4058;border-radius:8px;overflow:hidden}.ref-row{background:#14243a;display:flex;justify-content:space-between;align-items:center;gap:7px;padding:8px 10px;font-size:12px}.ref-row code{font-family:Consolas,monospace;color:#8ce9ee;white-space:nowrap}.ref-row span{color:#adc0d5;text-align:right}.right footer{border-top:1px solid #2d415c;margin-top:23px;padding-top:15px;font-size:11px;color:#788fa8}.choice-list{display:grid;gap:9px}.choice{width:100%;text-align:left;display:flex;align-items:flex-start;gap:13px;padding:14px;border:1px solid #3a526d;background:#111f34;border-radius:9px;color:#e6f1ff}.choice:hover{border-color:#50cce5;background:#1a2e48}.choice.selected{border-color:var(--cyan);background:#17374b}.choice .letter{font:800 13px Consolas,monospace;border:1px solid #49647b;border-radius:6px;min-width:27px;text-align:center;padding:1px;color:var(--cyan)}.choice .answertext{font-size:14px}.workspace{padding:25px}.workspace p{color:#b2c7dc;max-width:650px}.workspace textarea{min-height:250px}.workspace .live-frame{min-height:190px;font-size:26px;margin:17px 0}.workspace .code-input{margin-top:18px}.smallprint{font-size:11px;color:#879cb2;margin:14px 0 0}.footline{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:21px;color:#6e879e;font:11px Consolas,monospace}.math-target mjx-container,.live-frame mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}.math-error{font-size:13px!important;color:#ffbdad!important;overflow-wrap:anywhere}.hidden{display:none!important}@media(max-width:1110px){.layout{grid-template-columns:210px minmax(0,1fr)}.right{grid-column:2}.top-note{display:none}}@media(max-width:700px){.shell{padding:16px 12px 30px}.topbar{padding-bottom:17px}.layout{display:block}.sidebar{position:static;display:flex;gap:5px;overflow:auto;margin-bottom:13px;padding:8px}.sidebar>.eyebrow,.side-divider,.side-copy{display:none}.mode{min-width:128px;margin:0;padding:8px;gap:7px}.mode .ico{display:none}.center-panel{min-height:auto}.pane-header{padding:17px}.task-body,.workspace{padding:17px}.right{margin-top:14px}.btn.next{margin-left:0}.math-target{font-size:22px}.brand h1{font-size:24px}.brand{gap:10px}.logo{width:40px;height:40px;font-size:16px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
 mjx-assistive-mml{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+
+.training-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:flex-end}.difficulty-wrap{position:relative}.difficulty-btn{border:1px solid #48617b;background:#142c42;color:#c3d8ea;font:700 11px Consolas,monospace;letter-spacing:.03em;border-radius:8px;padding:9px 10px;white-space:nowrap}.difficulty-btn:hover,.difficulty-btn[aria-expanded="true"]{border-color:var(--cyan);background:#1b4052}.difficulty-btn strong{color:#8ce9ee;margin-left:4px}.difficulty-btn span{font-size:15px;line-height:0;margin-left:4px}.difficulty-menu{position:absolute;top:calc(100% + 5px);right:0;z-index:30;min-width:146px;padding:6px;border:1px solid #446c7f;border-radius:10px;background:#11263c;box-shadow:0 15px 30px #0008}.difficulty-menu button{display:block;width:100%;padding:9px 12px;background:transparent;border:0;border-radius:6px;color:#dcecff;text-align:left;font:700 12px 'Segoe UI',sans-serif}.difficulty-menu button:hover,.difficulty-menu button.active{background:#1b4858;color:#b8ffff}#writeArea .actions{margin-top:19px}@media(max-width:700px){.pane-header{flex-wrap:wrap}.training-controls{justify-content:flex-start}.difficulty-menu{left:0;right:auto}}
 </style>
 <script>window.MathJax={tex:{packages:{'[+]':['ams']},inlineMath:[['\\(','\\)']]},svg:{fontCache:'local'},startup:{typeset:false}};</script>
 <script>
@@ -18,7 +20,7 @@ mjx-assistive-mml{position:absolute!important;left:-10000px!important;width:1px!
 </head>
 <body>
 <div class="shell">
-<header class="topbar"><div class="brand"><div class="logo" aria-hidden="true">{ }</div><div><div class="eyebrow">INFORMATIK // INTERAKTIV</div><h1><span>LaTeX</span> Syntax Lab</h1></div></div><div class="top-note"><b>●</b> LOKALER TRAININGSMODUS &nbsp; // &nbsp; OHNE ACCOUNT</div></header>
+<header class="topbar"><div class="brand"><div class="logo" aria-hidden="true">{ }</div><div><div class="eyebrow">INFORMATIK // INTERAKTIV</div><h1><span>LaTeX</span> Syntax Lab</h1></div></div></header>
 <p class="lede">Mathematische Formeln wie Code schreiben, typische Fehler finden und das Ergebnis sofort sehen. Kein Punktestand, keine Rangliste – nur Übung und direkte Rückmeldung.</p>
 <div class="layout">
 <nav class="sidebar panel" aria-label="Trainingsbereiche"><div class="eyebrow">TRAININGSBEREICHE</div>
@@ -29,22 +31,26 @@ mjx-assistive-mml{position:absolute!important;left:-10000px!important;width:1px!
 <div class="side-divider"></div><div class="side-copy">Formeln und Aufgaben orientieren sich am hochgeladenen Informatikmaterial.</div></nav>
 <main class="center-panel panel">
 <section id="quizPanel">
-<div class="pane-header"><div><div class="eyebrow" id="modeLine">SYNTAX / FORMELN</div><h2 id="sectionTitle">Formeln schreiben</h2></div><div class="tiny-tag" id="taskCode">TRAINING</div></div>
+<div class="pane-header"><div><div class="eyebrow" id="modeLine">SYNTAX / FORMELN</div><h2 id="sectionTitle">Formeln schreiben</h2></div><div class="training-controls"><div class="difficulty-wrap" id="difficultyWrap">
+<button type="button" id="difficultyToggle" class="difficulty-btn" aria-haspopup="true" aria-expanded="false" title="Schwierigkeitsgrad für diesen Trainingsbereich auswählen">SCHWIERIGKEIT: <strong id="difficultyLabel">LEICHT</strong> <span aria-hidden="true">⌄</span></button>
+<div id="difficultyMenu" class="difficulty-menu hidden" role="group" aria-label="Schwierigkeitsgrad auswählen">
+<button type="button" data-difficulty="easy">Leicht</button>
+<button type="button" data-difficulty="medium">Mittel</button>
+<button type="button" data-difficulty="hard">Schwer</button>
+</div></div><div class="tiny-tag" id="taskCode">TRAINING</div></div></div>
 <div class="task-body"><h3 class="task-title" id="taskTitle"></h3><p class="prompt" id="prompt"></p>
 <div class="target-wrap" id="targetWrap"><div class="eyebrow">ZIELFORMEL</div><div id="targetMath" class="math-target"></div></div>
 <pre class="codefault hidden" id="badCode" aria-label="Fehlerhafter Quelltext"></pre>
 <div id="writeArea"><div class="label-row"><label for="answer">DEIN LaTeX-QUELLTEXT</label><span class="micro">Ctrl + Enter = prüfen</span></div><textarea id="answer" autocomplete="off" spellcheck="false" placeholder="Hier LaTeX-Code eingeben …" aria-describedby="prompt"></textarea>
-<div class="keys" id="keys"><button type="button" class="key" data-insert="\">\</button><button type="button" class="key" data-insert="{">{</button><button type="button" class="key" data-insert="}">}</button><button type="button" class="key" data-insert="^">^</button><button type="button" class="key" data-insert="_">_</button><button type="button" class="key" data-insert="\frac{}{}">\frac</button><button type="button" class="key" data-insert="\sqrt{}">\sqrt</button><button type="button" class="key" data-insert="&">&amp;</button><button type="button" class="key" data-insert="\\">\\</button></div></div>
+</div>
 <div id="choiceList" class="choice-list hidden" role="group" aria-label="Antwortmöglichkeiten"></div>
 <div class="actions"><button class="btn primary" id="check">Prüfen</button><button class="btn" id="hint">Hinweis</button><button class="btn" id="solution">Lösung zeigen</button><button class="btn next" id="next">Nächste Aufgabe →</button></div>
 <div id="feedback" class="feedback" role="status" aria-live="polite"></div></div></section>
 <section id="labPanel" class="hidden"><div class="pane-header"><div><div class="eyebrow">FREIER EDITOR / LIVE-RENDER</div><h2>Experimentiere mit LaTeX</h2></div><div class="tiny-tag">SANDBOX</div></div><div class="workspace"><p>Schreibe eine mathematische Formel und beobachte ihre Darstellung. Hier sind keine Antworten vorgegeben: Probiere Klammern, Brüche, Indizes und Gleichungen aus.</p>
-<div class="label-row code-input"><label for="labInput">DEIN FORMEL-CODE</label><span class="micro">ohne $...$ eingeben</span></div><textarea id="labInput" spellcheck="false">x_{12}+\frac{1}{2}</textarea><div class="keys" id="labKeys"><button type="button" class="key" data-insert="\frac{}{}">\frac</button><button type="button" class="key" data-insert="\sqrt{}">\sqrt</button><button type="button" class="key" data-insert="\vec{}">\vec</button><button type="button" class="key" data-insert="\bar{}">\bar</button><button type="button" class="key" data-insert="\infty">\infty</button><button type="button" class="key" data-insert="align">align</button></div>
+<div class="label-row code-input"><label for="labInput">DEIN FORMEL-CODE</label><span class="micro">ohne $...$ eingeben</span></div><textarea id="labInput" spellcheck="false">x_{12}+\frac{1}{2}</textarea>
 <div class="eyebrow">GERENDERTE FORMEL</div><div id="labPreview" class="live-frame" aria-live="polite"></div><div class="actions"><button class="btn primary" id="renderLab">Vorschau aktualisieren</button><button class="btn" id="clearLab">Editor leeren</button></div><p id="labStatus" class="smallprint"></p></div></section>
 </main>
-<aside class="right panel"><div class="eyebrow">LIVE / CODEPREVIEW</div><h3>Was du gerade schreibst</h3><div class="live-frame" id="liveMath" aria-label="Vorschau der eingegebenen Formel"></div><div class="caption">Die Vorschau zeigt deinen Quelltext als Formel. Im Debugging-Modus kannst du die Verbesserung direkt sehen.</div><div class="eyebrow">SYNTAX-REFERENZ</div><div class="ref-grid">
-<div class="ref-row"><code>x_{12}</code><span>Index</span></div><div class="ref-row"><code>x^{12}</code><span>Exponent</span></div><div class="ref-row"><code>\frac{1}{2}</code><span>Bruch</span></div><div class="ref-row"><code>\sqrt{x}</code><span>Wurzel</span></div><div class="ref-row"><code>\vec{F}</code><span>Vektor</span></div><div class="ref-row"><code>\neq</code><span>ungleich</span></div><div class="ref-row"><code>\infty</code><span>unendlich</span></div><div class="ref-row"><code>&amp;=</code><span>ausrichten</span></div><div class="ref-row"><code>\\</code><span>neue Zeile</span></div>
-</div><footer>TECH / Mathematische Darstellung: MathJax SVG. Läuft vollständig offline im Browser. Drücke im Eingabefeld <strong>Ctrl+Enter</strong> zum Prüfen.</footer></aside>
+<aside class="right panel"><div class="eyebrow">LIVE / CODEPREVIEW</div><h3>Was du gerade schreibst</h3><div class="live-frame" id="liveMath" aria-label="Vorschau der eingegebenen Formel"></div><div class="caption">Die Vorschau zeigt deinen Quelltext als Formel. Im Debugging-Modus kannst du die Verbesserung direkt sehen.</div><footer>TECH / Mathematische Darstellung: MathJax SVG. Läuft vollständig offline im Browser. Drücke im Eingabefeld <strong>Ctrl+Enter</strong> zum Prüfen.</footer></aside>
 </div>
 <div class="footline"><span>LATEX SYNTAX LAB // INFORMATIK</span><span>Keine Anmeldung · keine Speicherung · keine Belohnungssysteme</span></div>
 </div>
@@ -101,10 +107,3288 @@ x_{12} &= 5
   {title:'Buchstabe oder Operator?',prompt:'Welcher Befehl ist das mathematische Summenzeichen?',choices:[tex`\Sigma`,tex`\sum`,tex`\sqrt`],right:1,render:tex`\sum_{i=1}^3 i`,why:'Das Summenzeichen heißt \\sum.'}
  ]
 };
+// Schwierigkeitseinteilung der vorhandenen Unterrichtsaufgaben.
+const originalDifficulties = {"build":["easy","easy","easy","easy","medium","easy","easy","easy","hard","easy","easy","medium","medium"],"fix":["easy","easy","easy","medium","easy","easy","hard","hard"],"know":["easy","easy","easy","medium","medium","easy","medium","easy"]};
+for (const mode of ['build','fix','know']) decks[mode].forEach((entry,i)=>entry.difficulty=originalDifficulties[mode][i]);
+// Zusätzliche, eindeutige Übungen: je 100 pro Trainingsbereich insgesamt.
+const additionalDecks = {
+ "build": [
+  {
+   "title": "Symbol: reellen Zahlen",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\mathbb{R}",
+   "difficulty": "easy",
+   "answers": [
+    "\\mathbb{R}"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\mathbb benötigt die geschweifte Gruppe {R}."
+  },
+  {
+   "title": "Symbol: Malpunkt",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\cdot",
+   "difficulty": "easy",
+   "answers": [
+    "\\cdot"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\cdot erzeugt einen mittigen Multiplikationspunkt."
+  },
+  {
+   "title": "Symbol: Elementzeichen",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\in",
+   "difficulty": "easy",
+   "answers": [
+    "\\in"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\in bedeutet „ist Element von“."
+  },
+  {
+   "title": "Symbol: Nicht-Elementzeichen",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\notin",
+   "difficulty": "easy",
+   "answers": [
+    "\\notin"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\notin bedeutet „ist kein Element von“."
+  },
+  {
+   "title": "Symbol: Kleiner-gleich-Zeichen",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\leq",
+   "difficulty": "easy",
+   "answers": [
+    "\\leq"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\leq steht für „kleiner oder gleich“."
+  },
+  {
+   "title": "Symbol: Größer-gleich-Zeichen",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\geq",
+   "difficulty": "easy",
+   "answers": [
+    "\\geq"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\geq steht für „größer oder gleich“."
+  },
+  {
+   "title": "Symbol: Multiplikationskreuz",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\times",
+   "difficulty": "easy",
+   "answers": [
+    "\\times"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\times erzeugt das Multiplikationskreuz."
+  },
+  {
+   "title": "Symbol: Parallelzeichen",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\parallel",
+   "difficulty": "easy",
+   "answers": [
+    "\\parallel"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\parallel zeigt an, dass zwei Geraden parallel sind."
+  },
+  {
+   "title": "Symbol: Doppelpfeil nach rechts",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\Rightarrow",
+   "difficulty": "easy",
+   "answers": [
+    "\\Rightarrow"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\Rightarrow erzeugt einen Doppelpfeil nach rechts."
+  },
+  {
+   "title": "Symbol: Doppelpfeil nach links",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\Leftarrow",
+   "difficulty": "easy",
+   "answers": [
+    "\\Leftarrow"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\Leftarrow erzeugt einen Doppelpfeil nach links."
+  },
+  {
+   "title": "Symbol: Punkt über x",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\dot{x}",
+   "difficulty": "easy",
+   "answers": [
+    "\\dot{x}"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\dot{x} setzt einen Punkt über x."
+  },
+  {
+   "title": "Symbol: Dach über x",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\hat{x}",
+   "difficulty": "easy",
+   "answers": [
+    "\\hat{x}"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\hat{x} setzt ein kleines Dach über x."
+  },
+  {
+   "title": "Symbol: Tilde über x",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\tilde{x}",
+   "difficulty": "easy",
+   "answers": [
+    "\\tilde{x}"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\tilde{x} setzt eine geschwungene Linie über x."
+  },
+  {
+   "title": "Symbol: großen griechischen Buchstaben Sigma",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\Sigma",
+   "difficulty": "easy",
+   "answers": [
+    "\\Sigma"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\Sigma ist ein griechischer Buchstabe, nicht das Summenzeichen."
+  },
+  {
+   "title": "Symbol: Ungefähr-gleich-Zeichen",
+   "prompt": "Schreibe den LaTeX-Befehl für das angezeigte Symbol.",
+   "render": "\\approx",
+   "difficulty": "easy",
+   "answers": [
+    "\\approx"
+   ],
+   "hint": "Ein LaTeX-Befehl beginnt meistens mit einem Backslash (\\).",
+   "why": "\\approx bedeutet „ungefähr gleich“."
+  },
+  {
+   "title": "Wurzel aus x",
+   "prompt": "Schreibe den Code für diese Quadratwurzel.",
+   "render": "\\sqrt{x}",
+   "difficulty": "easy",
+   "answers": [
+    "\\sqrt{x}"
+   ],
+   "hint": "Nutze \\sqrt{...}.",
+   "why": "Der Radikand x steht zwischen den geschweiften Klammern."
+  },
+  {
+   "title": "Wurzel aus 9",
+   "prompt": "Schreibe den Code für diese Quadratwurzel.",
+   "render": "\\sqrt{9}",
+   "difficulty": "easy",
+   "answers": [
+    "\\sqrt{9}"
+   ],
+   "hint": "Nutze \\sqrt{...}.",
+   "why": "Der Radikand 9 steht zwischen den geschweiften Klammern."
+  },
+  {
+   "title": "Wurzel aus a",
+   "prompt": "Schreibe den Code für diese Quadratwurzel.",
+   "render": "\\sqrt{a}",
+   "difficulty": "easy",
+   "answers": [
+    "\\sqrt{a}"
+   ],
+   "hint": "Nutze \\sqrt{...}.",
+   "why": "Der Radikand a steht zwischen den geschweiften Klammern."
+  },
+  {
+   "title": "Wurzel aus y",
+   "prompt": "Schreibe den Code für diese Quadratwurzel.",
+   "render": "\\sqrt{y}",
+   "difficulty": "easy",
+   "answers": [
+    "\\sqrt{y}"
+   ],
+   "hint": "Nutze \\sqrt{...}.",
+   "why": "Der Radikand y steht zwischen den geschweiften Klammern."
+  },
+  {
+   "title": "Wurzel aus 16",
+   "prompt": "Schreibe den Code für diese Quadratwurzel.",
+   "render": "\\sqrt{16}",
+   "difficulty": "easy",
+   "answers": [
+    "\\sqrt{16}"
+   ],
+   "hint": "Nutze \\sqrt{...}.",
+   "why": "Der Radikand 16 steht zwischen den geschweiften Klammern."
+  },
+  {
+   "title": "Bruch 3 durch 4",
+   "prompt": "Schreibe den Bruch mit dem Befehl frac.",
+   "render": "\\frac{3}{4}",
+   "difficulty": "easy",
+   "answers": [
+    "\\frac{3}{4}"
+   ],
+   "hint": "\\frac{Zähler}{Nenner}.",
+   "why": "3 steht im Zähler und 4 im Nenner."
+  },
+  {
+   "title": "Bruch 5 durch 8",
+   "prompt": "Schreibe den Bruch mit dem Befehl frac.",
+   "render": "\\frac{5}{8}",
+   "difficulty": "easy",
+   "answers": [
+    "\\frac{5}{8}"
+   ],
+   "hint": "\\frac{Zähler}{Nenner}.",
+   "why": "5 steht im Zähler und 8 im Nenner."
+  },
+  {
+   "title": "Bruch a durch b",
+   "prompt": "Schreibe den Bruch mit dem Befehl frac.",
+   "render": "\\frac{a}{b}",
+   "difficulty": "easy",
+   "answers": [
+    "\\frac{a}{b}"
+   ],
+   "hint": "\\frac{Zähler}{Nenner}.",
+   "why": "a steht im Zähler und b im Nenner."
+  },
+  {
+   "title": "Bruch x durch 7",
+   "prompt": "Schreibe den Bruch mit dem Befehl frac.",
+   "render": "\\frac{x}{7}",
+   "difficulty": "easy",
+   "answers": [
+    "\\frac{x}{7}"
+   ],
+   "hint": "\\frac{Zähler}{Nenner}.",
+   "why": "x steht im Zähler und 7 im Nenner."
+  },
+  {
+   "title": "Bruch 11 durch 12",
+   "prompt": "Schreibe den Bruch mit dem Befehl frac.",
+   "render": "\\frac{11}{12}",
+   "difficulty": "easy",
+   "answers": [
+    "\\frac{11}{12}"
+   ],
+   "hint": "\\frac{Zähler}{Nenner}.",
+   "why": "11 steht im Zähler und 12 im Nenner."
+  },
+  {
+   "title": "Index und Exponent: v",
+   "prompt": "Schreibe die gezeigte Formel mit dem vollständigen Index und Exponenten.",
+   "render": "v_{max}^{2}",
+   "difficulty": "medium",
+   "answers": [
+    "v_{max}^{2}"
+   ],
+   "hint": "Nutze v_{max}^{2}.",
+   "why": "Index und Exponent benötigen getrennte Klammergruppen."
+  },
+  {
+   "title": "Index und Exponent: a",
+   "prompt": "Schreibe die gezeigte Formel mit dem vollständigen Index und Exponenten.",
+   "render": "a_{ij}^{3}",
+   "difficulty": "medium",
+   "answers": [
+    "a_{ij}^{3}"
+   ],
+   "hint": "Nutze a_{ij}^{3}.",
+   "why": "Index und Exponent benötigen getrennte Klammergruppen."
+  },
+  {
+   "title": "Index und Exponent: F",
+   "prompt": "Schreibe die gezeigte Formel mit dem vollständigen Index und Exponenten.",
+   "render": "F_{12}^{n}",
+   "difficulty": "medium",
+   "answers": [
+    "F_{12}^{n}"
+   ],
+   "hint": "Nutze F_{12}^{n}.",
+   "why": "Index und Exponent benötigen getrennte Klammergruppen."
+  },
+  {
+   "title": "Index und Exponent: x",
+   "prompt": "Schreibe die gezeigte Formel mit dem vollständigen Index und Exponenten.",
+   "render": "x_{n+1}^{2}",
+   "difficulty": "medium",
+   "answers": [
+    "x_{n+1}^{2}"
+   ],
+   "hint": "Nutze x_{n+1}^{2}.",
+   "why": "Index und Exponent benötigen getrennte Klammergruppen."
+  },
+  {
+   "title": "Index und Exponent: T",
+   "prompt": "Schreibe die gezeigte Formel mit dem vollständigen Index und Exponenten.",
+   "render": "T_{in}^{4}",
+   "difficulty": "medium",
+   "answers": [
+    "T_{in}^{4}"
+   ],
+   "hint": "Nutze T_{in}^{4}.",
+   "why": "Index und Exponent benötigen getrennte Klammergruppen."
+  },
+  {
+   "title": "Index und Exponent: A",
+   "prompt": "Schreibe die gezeigte Formel mit dem vollständigen Index und Exponenten.",
+   "render": "A_{0}^{12}",
+   "difficulty": "medium",
+   "answers": [
+    "A_{0}^{12}"
+   ],
+   "hint": "Nutze A_{0}^{12}.",
+   "why": "Index und Exponent benötigen getrennte Klammergruppen."
+  },
+  {
+   "title": "Bruch mit Termen",
+   "prompt": "Schreibe den vollständigen Bruch: Zähler und Nenner können mehrere Zeichen enthalten.",
+   "render": "\\frac{a+b}{c}",
+   "difficulty": "medium",
+   "answers": [
+    "\\frac{a+b}{c}"
+   ],
+   "hint": "Verwende zwei Klammergruppen: \\frac{ganzer Zähler}{ganzer Nenner}.",
+   "why": "Der vollständige Ausdruck im Zähler und Nenner steht jeweils in einer Gruppe."
+  },
+  {
+   "title": "Bruch mit Termen",
+   "prompt": "Schreibe den vollständigen Bruch: Zähler und Nenner können mehrere Zeichen enthalten.",
+   "render": "\\frac{x^2+1}{x+1}",
+   "difficulty": "medium",
+   "answers": [
+    "\\frac{x^2+1}{x+1}"
+   ],
+   "hint": "Verwende zwei Klammergruppen: \\frac{ganzer Zähler}{ganzer Nenner}.",
+   "why": "Der vollständige Ausdruck im Zähler und Nenner steht jeweils in einer Gruppe."
+  },
+  {
+   "title": "Bruch mit Termen",
+   "prompt": "Schreibe den vollständigen Bruch: Zähler und Nenner können mehrere Zeichen enthalten.",
+   "render": "\\frac{2x-3}{5}",
+   "difficulty": "medium",
+   "answers": [
+    "\\frac{2x-3}{5}"
+   ],
+   "hint": "Verwende zwei Klammergruppen: \\frac{ganzer Zähler}{ganzer Nenner}.",
+   "why": "Der vollständige Ausdruck im Zähler und Nenner steht jeweils in einer Gruppe."
+  },
+  {
+   "title": "Bruch mit Termen",
+   "prompt": "Schreibe den vollständigen Bruch: Zähler und Nenner können mehrere Zeichen enthalten.",
+   "render": "\\frac{p+q}{r+s}",
+   "difficulty": "medium",
+   "answers": [
+    "\\frac{p+q}{r+s}"
+   ],
+   "hint": "Verwende zwei Klammergruppen: \\frac{ganzer Zähler}{ganzer Nenner}.",
+   "why": "Der vollständige Ausdruck im Zähler und Nenner steht jeweils in einer Gruppe."
+  },
+  {
+   "title": "Bruch mit Termen",
+   "prompt": "Schreibe den vollständigen Bruch: Zähler und Nenner können mehrere Zeichen enthalten.",
+   "render": "\\frac{m^2}{n^2+1}",
+   "difficulty": "medium",
+   "answers": [
+    "\\frac{m^2}{n^2+1}"
+   ],
+   "hint": "Verwende zwei Klammergruppen: \\frac{ganzer Zähler}{ganzer Nenner}.",
+   "why": "Der vollständige Ausdruck im Zähler und Nenner steht jeweils in einer Gruppe."
+  },
+  {
+   "title": "Bruch mit Termen",
+   "prompt": "Schreibe den vollständigen Bruch: Zähler und Nenner können mehrere Zeichen enthalten.",
+   "render": "\\frac{a-1}{b+1}",
+   "difficulty": "medium",
+   "answers": [
+    "\\frac{a-1}{b+1}"
+   ],
+   "hint": "Verwende zwei Klammergruppen: \\frac{ganzer Zähler}{ganzer Nenner}.",
+   "why": "Der vollständige Ausdruck im Zähler und Nenner steht jeweils in einer Gruppe."
+  },
+  {
+   "title": "Wurzel mit Term 1",
+   "prompt": "Erzeuge die ganze angezeigte Wurzel und gruppiere ihren Inhalt richtig.",
+   "render": "\\sqrt{x^2+y^2}",
+   "difficulty": "medium",
+   "answers": [
+    "\\sqrt{x^2+y^2}"
+   ],
+   "hint": "Der gesamte Ausdruck unter dem Wurzelstrich steht in den Klammern von \\sqrt{...}.",
+   "why": "Der Wurzelstrich reicht über den gesamten Klammerinhalt."
+  },
+  {
+   "title": "Wurzel mit Term 2",
+   "prompt": "Erzeuge die ganze angezeigte Wurzel und gruppiere ihren Inhalt richtig.",
+   "render": "\\sqrt{a+b}",
+   "difficulty": "medium",
+   "answers": [
+    "\\sqrt{a+b}"
+   ],
+   "hint": "Der gesamte Ausdruck unter dem Wurzelstrich steht in den Klammern von \\sqrt{...}.",
+   "why": "Der Wurzelstrich reicht über den gesamten Klammerinhalt."
+  },
+  {
+   "title": "Wurzel mit Term 3",
+   "prompt": "Erzeuge die ganze angezeigte Wurzel und gruppiere ihren Inhalt richtig.",
+   "render": "\\sqrt{2x+3}",
+   "difficulty": "medium",
+   "answers": [
+    "\\sqrt{2x+3}"
+   ],
+   "hint": "Der gesamte Ausdruck unter dem Wurzelstrich steht in den Klammern von \\sqrt{...}.",
+   "why": "Der Wurzelstrich reicht über den gesamten Klammerinhalt."
+  },
+  {
+   "title": "Wurzel mit Term 4",
+   "prompt": "Erzeuge die ganze angezeigte Wurzel und gruppiere ihren Inhalt richtig.",
+   "render": "\\sqrt{\\frac{1}{2}}",
+   "difficulty": "medium",
+   "answers": [
+    "\\sqrt{\\frac{1}{2}}"
+   ],
+   "hint": "Der gesamte Ausdruck unter dem Wurzelstrich steht in den Klammern von \\sqrt{...}.",
+   "why": "Der Wurzelstrich reicht über den gesamten Klammerinhalt."
+  },
+  {
+   "title": "Wurzel mit Term 5",
+   "prompt": "Erzeuge die ganze angezeigte Wurzel und gruppiere ihren Inhalt richtig.",
+   "render": "\\sqrt{x_{12}}",
+   "difficulty": "medium",
+   "answers": [
+    "\\sqrt{x_{12}}"
+   ],
+   "hint": "Der gesamte Ausdruck unter dem Wurzelstrich steht in den Klammern von \\sqrt{...}.",
+   "why": "Der Wurzelstrich reicht über den gesamten Klammerinhalt."
+  },
+  {
+   "title": "Wurzel mit Term 6",
+   "prompt": "Erzeuge die ganze angezeigte Wurzel und gruppiere ihren Inhalt richtig.",
+   "render": "\\sqrt{m^2+n^2}",
+   "difficulty": "medium",
+   "answers": [
+    "\\sqrt{m^2+n^2}"
+   ],
+   "hint": "Der gesamte Ausdruck unter dem Wurzelstrich steht in den Klammern von \\sqrt{...}.",
+   "why": "Der Wurzelstrich reicht über den gesamten Klammerinhalt."
+  },
+  {
+   "title": "Relation: a ist eine reelle Zahl",
+   "prompt": "Gib die angezeigte mathematische Beziehung in LaTeX ein.",
+   "render": "a\\in\\mathbb{R}",
+   "difficulty": "medium",
+   "answers": [
+    "a\\in\\mathbb{R}"
+   ],
+   "hint": "Achte auf den jeweiligen Beziehungsoperator. Auch \\mathbb{R} enthält Klammern.",
+   "why": "Für diese Beziehung wird der mathematische Operator als LaTeX-Befehl geschrieben."
+  },
+  {
+   "title": "Relation: b gehört nicht zu den reellen Zahlen",
+   "prompt": "Gib die angezeigte mathematische Beziehung in LaTeX ein.",
+   "render": "b\\notin\\mathbb{R}",
+   "difficulty": "medium",
+   "answers": [
+    "b\\notin\\mathbb{R}"
+   ],
+   "hint": "Achte auf den jeweiligen Beziehungsoperator. Auch \\mathbb{R} enthält Klammern.",
+   "why": "Für diese Beziehung wird der mathematische Operator als LaTeX-Befehl geschrieben."
+  },
+  {
+   "title": "Relation: x ist höchstens 5",
+   "prompt": "Gib die angezeigte mathematische Beziehung in LaTeX ein.",
+   "render": "x\\leq 5",
+   "difficulty": "medium",
+   "answers": [
+    "x\\leq 5"
+   ],
+   "hint": "Achte auf den jeweiligen Beziehungsoperator. Auch \\mathbb{R} enthält Klammern.",
+   "why": "Für diese Beziehung wird der mathematische Operator als LaTeX-Befehl geschrieben."
+  },
+  {
+   "title": "Relation: y ist mindestens 2",
+   "prompt": "Gib die angezeigte mathematische Beziehung in LaTeX ein.",
+   "render": "y\\geq 2",
+   "difficulty": "medium",
+   "answers": [
+    "y\\geq 2"
+   ],
+   "hint": "Achte auf den jeweiligen Beziehungsoperator. Auch \\mathbb{R} enthält Klammern.",
+   "why": "Für diese Beziehung wird der mathematische Operator als LaTeX-Befehl geschrieben."
+  },
+  {
+   "title": "Relation: g ist parallel zu h",
+   "prompt": "Gib die angezeigte mathematische Beziehung in LaTeX ein.",
+   "render": "g\\parallel h",
+   "difficulty": "medium",
+   "answers": [
+    "g\\parallel h"
+   ],
+   "hint": "Achte auf den jeweiligen Beziehungsoperator. Auch \\mathbb{R} enthält Klammern.",
+   "why": "Für diese Beziehung wird der mathematische Operator als LaTeX-Befehl geschrieben."
+  },
+  {
+   "title": "Relation: Doppelpfeil von x nach y",
+   "prompt": "Gib die angezeigte mathematische Beziehung in LaTeX ein.",
+   "render": "x\\Rightarrow y",
+   "difficulty": "medium",
+   "answers": [
+    "x\\Rightarrow y"
+   ],
+   "hint": "Achte auf den jeweiligen Beziehungsoperator. Auch \\mathbb{R} enthält Klammern.",
+   "why": "Für diese Beziehung wird der mathematische Operator als LaTeX-Befehl geschrieben."
+  },
+  {
+   "title": "Akzent und Beschriftung",
+   "prompt": "Schreibe die angezeigte Formel: Klammer unter a+b mit c als Kennzeichnung.",
+   "render": "\\underbrace{a+b}_{c}",
+   "difficulty": "medium",
+   "answers": [
+    "\\underbrace{a+b}_{c}"
+   ],
+   "hint": "Prüfe, ob \\underbrace, \\overbrace, \\overset oder ein Akzentbefehl nötig ist.",
+   "why": "Mit den Klammergruppen wird festgelegt, welcher Ausdruck markiert bzw. beschriftet wird."
+  },
+  {
+   "title": "Akzent und Beschriftung",
+   "prompt": "Schreibe die angezeigte Formel: Klammer über x+y mit z als Kennzeichnung.",
+   "render": "\\overbrace{x+y}^{z}",
+   "difficulty": "medium",
+   "answers": [
+    "\\overbrace{x+y}^{z}"
+   ],
+   "hint": "Prüfe, ob \\underbrace, \\overbrace, \\overset oder ein Akzentbefehl nötig ist.",
+   "why": "Mit den Klammergruppen wird festgelegt, welcher Ausdruck markiert bzw. beschriftet wird."
+  },
+  {
+   "title": "Akzent und Beschriftung",
+   "prompt": "Schreibe die angezeigte Formel: a direkt über b.",
+   "render": "\\overset{a}{b}",
+   "difficulty": "medium",
+   "answers": [
+    "\\overset{a}{b}"
+   ],
+   "hint": "Prüfe, ob \\underbrace, \\overbrace, \\overset oder ein Akzentbefehl nötig ist.",
+   "why": "Mit den Klammergruppen wird festgelegt, welcher Ausdruck markiert bzw. beschriftet wird."
+  },
+  {
+   "title": "Akzent und Beschriftung",
+   "prompt": "Schreibe die angezeigte Formel: 1 direkt unter x.",
+   "render": "\\underset{1}{x}",
+   "difficulty": "medium",
+   "answers": [
+    "\\underset{1}{x}"
+   ],
+   "hint": "Prüfe, ob \\underbrace, \\overbrace, \\overset oder ein Akzentbefehl nötig ist.",
+   "why": "Mit den Klammergruppen wird festgelegt, welcher Ausdruck markiert bzw. beschriftet wird."
+  },
+  {
+   "title": "Akzent und Beschriftung",
+   "prompt": "Schreibe die angezeigte Formel: ein gepunktetes x plus Vektor F.",
+   "render": "\\dot{x}+\\vec{F}",
+   "difficulty": "medium",
+   "answers": [
+    "\\dot{x}+\\vec{F}"
+   ],
+   "hint": "Prüfe, ob \\underbrace, \\overbrace, \\overset oder ein Akzentbefehl nötig ist.",
+   "why": "Mit den Klammergruppen wird festgelegt, welcher Ausdruck markiert bzw. beschriftet wird."
+  },
+  {
+   "title": "Akzent und Beschriftung",
+   "prompt": "Schreibe die angezeigte Formel: a mit Dach plus b mit Tilde.",
+   "render": "\\hat{a}+\\tilde{b}",
+   "difficulty": "medium",
+   "answers": [
+    "\\hat{a}+\\tilde{b}"
+   ],
+   "hint": "Prüfe, ob \\underbrace, \\overbrace, \\overset oder ein Akzentbefehl nötig ist.",
+   "why": "Mit den Klammergruppen wird festgelegt, welcher Ausdruck markiert bzw. beschriftet wird."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 1",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}3x+2 &=14 \\\\ 3x &=12 \\\\ x &=4\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n3x+2 &=14 \\\\\n3x &=12 \\\\\nx &=4\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 2",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}2x-6 &=10 \\\\ 2x &=16 \\\\ x &=8\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n2x-6 &=10 \\\\\n2x &=16 \\\\\nx &=8\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 3",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}5x+1 &=16 \\\\ 5x &=15 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n5x+1 &=16 \\\\\n5x &=15 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 4",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}4x-8 &=0 \\\\ 4x &=8 \\\\ x &=2\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n4x-8 &=0 \\\\\n4x &=8 \\\\\nx &=2\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 5",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}7x+3 &=24 \\\\ 7x &=21 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n7x+3 &=24 \\\\\n7x &=21 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 6",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}6x-4 &=14 \\\\ 6x &=18 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n6x-4 &=14 \\\\\n6x &=18 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 7",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}9x+2 &=47 \\\\ 9x &=45 \\\\ x &=5\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n9x+2 &=47 \\\\\n9x &=45 \\\\\nx &=5\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Mehrere Gleichungen ausrichten 8",
+   "prompt": "Schreibe den vollständigen align*-Block mit drei Zeilen. Richte alle Gleichheitszeichen bündig aus.",
+   "render": "\\begin{aligned}8x-7 &=17 \\\\ 8x &=24 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "answers": [
+    "\\begin{align*}\n8x-7 &=17 \\\\\n8x &=24 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Nutze \\begin{align*} ... \\end{align*}, vor jedem = ein & und zwischen Zeilen \\\\.",
+   "why": "& bezeichnet die Ausrichtungsstelle, \\\\ trennt zwei Gleichungszeilen."
+  },
+  {
+   "title": "Verschachtelter Bruch 1",
+   "prompt": "Schreibe die vollständige Formel mit dem kleinen Bruch innerhalb des größeren.",
+   "render": "\\frac{1}{1+\\frac{1}{x}}",
+   "difficulty": "hard",
+   "answers": [
+    "\\frac{1}{1+\\frac{1}{x}}"
+   ],
+   "hint": "Beginne mit dem äußeren \\frac{...}{...} und setze darin einen zweiten \\frac-Befehl ein.",
+   "why": "Geschweifte Klammern trennen die Ebenen ineinander geschachtelter Brüche."
+  },
+  {
+   "title": "Verschachtelter Bruch 2",
+   "prompt": "Schreibe die vollständige Formel mit dem kleinen Bruch innerhalb des größeren.",
+   "render": "\\frac{\\frac{a}{b}}{c}",
+   "difficulty": "hard",
+   "answers": [
+    "\\frac{\\frac{a}{b}}{c}"
+   ],
+   "hint": "Beginne mit dem äußeren \\frac{...}{...} und setze darin einen zweiten \\frac-Befehl ein.",
+   "why": "Geschweifte Klammern trennen die Ebenen ineinander geschachtelter Brüche."
+  },
+  {
+   "title": "Verschachtelter Bruch 3",
+   "prompt": "Schreibe die vollständige Formel mit dem kleinen Bruch innerhalb des größeren.",
+   "render": "\\frac{a+b}{\\frac{c}{d}}",
+   "difficulty": "hard",
+   "answers": [
+    "\\frac{a+b}{\\frac{c}{d}}"
+   ],
+   "hint": "Beginne mit dem äußeren \\frac{...}{...} und setze darin einen zweiten \\frac-Befehl ein.",
+   "why": "Geschweifte Klammern trennen die Ebenen ineinander geschachtelter Brüche."
+  },
+  {
+   "title": "Verschachtelter Bruch 4",
+   "prompt": "Schreibe die vollständige Formel mit dem kleinen Bruch innerhalb des größeren.",
+   "render": "\\frac{1+\\frac{1}{2}}{3}",
+   "difficulty": "hard",
+   "answers": [
+    "\\frac{1+\\frac{1}{2}}{3}"
+   ],
+   "hint": "Beginne mit dem äußeren \\frac{...}{...} und setze darin einen zweiten \\frac-Befehl ein.",
+   "why": "Geschweifte Klammern trennen die Ebenen ineinander geschachtelter Brüche."
+  },
+  {
+   "title": "Verschachtelter Bruch 5",
+   "prompt": "Schreibe die vollständige Formel mit dem kleinen Bruch innerhalb des größeren.",
+   "render": "\\frac{\\sqrt{x}}{\\frac{a}{b}}",
+   "difficulty": "hard",
+   "answers": [
+    "\\frac{\\sqrt{x}}{\\frac{a}{b}}"
+   ],
+   "hint": "Beginne mit dem äußeren \\frac{...}{...} und setze darin einen zweiten \\frac-Befehl ein.",
+   "why": "Geschweifte Klammern trennen die Ebenen ineinander geschachtelter Brüche."
+  },
+  {
+   "title": "Verschachtelter Bruch 6",
+   "prompt": "Schreibe die vollständige Formel mit dem kleinen Bruch innerhalb des größeren.",
+   "render": "\\frac{\\frac{a+b}{c}}{d+1}",
+   "difficulty": "hard",
+   "answers": [
+    "\\frac{\\frac{a+b}{c}}{d+1}"
+   ],
+   "hint": "Beginne mit dem äußeren \\frac{...}{...} und setze darin einen zweiten \\frac-Befehl ein.",
+   "why": "Geschweifte Klammern trennen die Ebenen ineinander geschachtelter Brüche."
+  },
+  {
+   "title": "Angepasste Klammern 1",
+   "prompt": "Schreibe den Ausdruck so, dass sich beide äußeren Begrenzungen an den Inhalt anpassen.",
+   "render": "\\left(\\frac{a+b}{c}\\right)",
+   "difficulty": "hard",
+   "answers": [
+    "\\left(\\frac{a+b}{c}\\right)"
+   ],
+   "hint": "Benutze \\left vor und \\right hinter dem Ausdruck; bei geschweiften Begrenzungen muss auch die Klammer escaped werden.",
+   "why": "\\left und \\right bilden ein Paar und passen die Größe der sichtbaren Klammern an."
+  },
+  {
+   "title": "Angepasste Klammern 2",
+   "prompt": "Schreibe den Ausdruck so, dass sich beide äußeren Begrenzungen an den Inhalt anpassen.",
+   "render": "\\left[\\frac{x+1}{y+1}\\right]",
+   "difficulty": "hard",
+   "answers": [
+    "\\left[\\frac{x+1}{y+1}\\right]"
+   ],
+   "hint": "Benutze \\left vor und \\right hinter dem Ausdruck; bei geschweiften Begrenzungen muss auch die Klammer escaped werden.",
+   "why": "\\left und \\right bilden ein Paar und passen die Größe der sichtbaren Klammern an."
+  },
+  {
+   "title": "Angepasste Klammern 3",
+   "prompt": "Schreibe den Ausdruck so, dass sich beide äußeren Begrenzungen an den Inhalt anpassen.",
+   "render": "\\left(\\frac{1}{1+\\frac{1}{2}}\\right)",
+   "difficulty": "hard",
+   "answers": [
+    "\\left(\\frac{1}{1+\\frac{1}{2}}\\right)"
+   ],
+   "hint": "Benutze \\left vor und \\right hinter dem Ausdruck; bei geschweiften Begrenzungen muss auch die Klammer escaped werden.",
+   "why": "\\left und \\right bilden ein Paar und passen die Größe der sichtbaren Klammern an."
+  },
+  {
+   "title": "Angepasste Klammern 4",
+   "prompt": "Schreibe den Ausdruck so, dass sich beide äußeren Begrenzungen an den Inhalt anpassen.",
+   "render": "\\left\\{\\frac{a}{b}+1\\right\\}",
+   "difficulty": "hard",
+   "answers": [
+    "\\left\\{\\frac{a}{b}+1\\right\\}"
+   ],
+   "hint": "Benutze \\left vor und \\right hinter dem Ausdruck; bei geschweiften Begrenzungen muss auch die Klammer escaped werden.",
+   "why": "\\left und \\right bilden ein Paar und passen die Größe der sichtbaren Klammern an."
+  },
+  {
+   "title": "Angepasste Klammern 5",
+   "prompt": "Schreibe den Ausdruck so, dass sich beide äußeren Begrenzungen an den Inhalt anpassen.",
+   "render": "\\left|\\frac{x-1}{2}\\right|",
+   "difficulty": "hard",
+   "answers": [
+    "\\left|\\frac{x-1}{2}\\right|"
+   ],
+   "hint": "Benutze \\left vor und \\right hinter dem Ausdruck; bei geschweiften Begrenzungen muss auch die Klammer escaped werden.",
+   "why": "\\left und \\right bilden ein Paar und passen die Größe der sichtbaren Klammern an."
+  },
+  {
+   "title": "Angepasste Klammern 6",
+   "prompt": "Schreibe den Ausdruck so, dass sich beide äußeren Begrenzungen an den Inhalt anpassen.",
+   "render": "\\left(\\sqrt{\\frac{a+b}{c}}\\right)",
+   "difficulty": "hard",
+   "answers": [
+    "\\left(\\sqrt{\\frac{a+b}{c}}\\right)"
+   ],
+   "hint": "Benutze \\left vor und \\right hinter dem Ausdruck; bei geschweiften Begrenzungen muss auch die Klammer escaped werden.",
+   "why": "\\left und \\right bilden ein Paar und passen die Größe der sichtbaren Klammern an."
+  },
+  {
+   "title": "Beschriftung und Markierung 1",
+   "prompt": "Erzeuge die dargestellte mathematische Markierung einschließlich der richtigen Beschriftung.",
+   "render": "\\underbrace{x+y+z}_{\\text{Summe}}",
+   "difficulty": "hard",
+   "answers": [
+    "\\underbrace{x+y+z}_{\\text{Summe}}"
+   ],
+   "hint": "Die Beschriftung steht bei \\underbrace tief, bei \\overbrace hoch, bei \\overset darüber und bei \\underset darunter.",
+   "why": "Die zwei Argumente geben jeweils den markierten Ausdruck und die Beschriftung an."
+  },
+  {
+   "title": "Beschriftung und Markierung 2",
+   "prompt": "Erzeuge die dargestellte mathematische Markierung einschließlich der richtigen Beschriftung.",
+   "render": "\\overbrace{a+b+c}^{3\\text{ Terme}}",
+   "difficulty": "hard",
+   "answers": [
+    "\\overbrace{a+b+c}^{3\\text{ Terme}}"
+   ],
+   "hint": "Die Beschriftung steht bei \\underbrace tief, bei \\overbrace hoch, bei \\overset darüber und bei \\underset darunter.",
+   "why": "Die zwei Argumente geben jeweils den markierten Ausdruck und die Beschriftung an."
+  },
+  {
+   "title": "Beschriftung und Markierung 3",
+   "prompt": "Erzeuge die dargestellte mathematische Markierung einschließlich der richtigen Beschriftung.",
+   "render": "\\underset{x\\in\\mathbb{R}}{\\Rightarrow}",
+   "difficulty": "hard",
+   "answers": [
+    "\\underset{x\\in\\mathbb{R}}{\\Rightarrow}"
+   ],
+   "hint": "Die Beschriftung steht bei \\underbrace tief, bei \\overbrace hoch, bei \\overset darüber und bei \\underset darunter.",
+   "why": "Die zwei Argumente geben jeweils den markierten Ausdruck und die Beschriftung an."
+  },
+  {
+   "title": "Beschriftung und Markierung 4",
+   "prompt": "Erzeuge die dargestellte mathematische Markierung einschließlich der richtigen Beschriftung.",
+   "render": "\\overset{!}{=}",
+   "difficulty": "hard",
+   "answers": [
+    "\\overset{!}{=}"
+   ],
+   "hint": "Die Beschriftung steht bei \\underbrace tief, bei \\overbrace hoch, bei \\overset darüber und bei \\underset darunter.",
+   "why": "Die zwei Argumente geben jeweils den markierten Ausdruck und die Beschriftung an."
+  },
+  {
+   "title": "Beschriftung und Markierung 5",
+   "prompt": "Erzeuge die dargestellte mathematische Markierung einschließlich der richtigen Beschriftung.",
+   "render": "\\underbrace{\\frac{a}{b}}_{c}",
+   "difficulty": "hard",
+   "answers": [
+    "\\underbrace{\\frac{a}{b}}_{c}"
+   ],
+   "hint": "Die Beschriftung steht bei \\underbrace tief, bei \\overbrace hoch, bei \\overset darüber und bei \\underset darunter.",
+   "why": "Die zwei Argumente geben jeweils den markierten Ausdruck und die Beschriftung an."
+  },
+  {
+   "title": "Beschriftung und Markierung 6",
+   "prompt": "Erzeuge die dargestellte mathematische Markierung einschließlich der richtigen Beschriftung.",
+   "render": "\\overbrace{\\sqrt{x^2+y^2}}^{r}",
+   "difficulty": "hard",
+   "answers": [
+    "\\overbrace{\\sqrt{x^2+y^2}}^{r}"
+   ],
+   "hint": "Die Beschriftung steht bei \\underbrace tief, bei \\overbrace hoch, bei \\overset darüber und bei \\underset darunter.",
+   "why": "Die zwei Argumente geben jeweils den markierten Ausdruck und die Beschriftung an."
+  },
+  {
+   "title": "Kombinierte Syntax 1",
+   "prompt": "Schreibe den gesamten komplexeren LaTeX-Ausdruck; beachte die Reihenfolge von Befehlen und Klammern.",
+   "render": "\\vec{F}_{12}^{2}",
+   "difficulty": "hard",
+   "answers": [
+    "\\vec{F}_{12}^{2}"
+   ],
+   "hint": "Zerlege die Formel gedanklich in Symbole, Hoch-/Tiefstellungen, Brüche und Markierungen.",
+   "why": "Die Gruppen definieren jeweils, auf welche Teile die einzelnen Befehle wirken."
+  },
+  {
+   "title": "Kombinierte Syntax 2",
+   "prompt": "Schreibe den gesamten komplexeren LaTeX-Ausdruck; beachte die Reihenfolge von Befehlen und Klammern.",
+   "render": "\\hat{x}_{n+1}+\\tilde{y}_{0}",
+   "difficulty": "hard",
+   "answers": [
+    "\\hat{x}_{n+1}+\\tilde{y}_{0}"
+   ],
+   "hint": "Zerlege die Formel gedanklich in Symbole, Hoch-/Tiefstellungen, Brüche und Markierungen.",
+   "why": "Die Gruppen definieren jeweils, auf welche Teile die einzelnen Befehle wirken."
+  },
+  {
+   "title": "Kombinierte Syntax 3",
+   "prompt": "Schreibe den gesamten komplexeren LaTeX-Ausdruck; beachte die Reihenfolge von Befehlen und Klammern.",
+   "render": "\\frac{\\dot{x}^{2}}{\\sqrt{a+b}}",
+   "difficulty": "hard",
+   "answers": [
+    "\\frac{\\dot{x}^{2}}{\\sqrt{a+b}}"
+   ],
+   "hint": "Zerlege die Formel gedanklich in Symbole, Hoch-/Tiefstellungen, Brüche und Markierungen.",
+   "why": "Die Gruppen definieren jeweils, auf welche Teile die einzelnen Befehle wirken."
+  },
+  {
+   "title": "Kombinierte Syntax 4",
+   "prompt": "Schreibe den gesamten komplexeren LaTeX-Ausdruck; beachte die Reihenfolge von Befehlen und Klammern.",
+   "render": "\\left(\\frac{x_{12}^{2}}{\\frac{1}{2}}\\right)",
+   "difficulty": "hard",
+   "answers": [
+    "\\left(\\frac{x_{12}^{2}}{\\frac{1}{2}}\\right)"
+   ],
+   "hint": "Zerlege die Formel gedanklich in Symbole, Hoch-/Tiefstellungen, Brüche und Markierungen.",
+   "why": "Die Gruppen definieren jeweils, auf welche Teile die einzelnen Befehle wirken."
+  },
+  {
+   "title": "Kombinierte Syntax 5",
+   "prompt": "Schreibe den gesamten komplexeren LaTeX-Ausdruck; beachte die Reihenfolge von Befehlen und Klammern.",
+   "render": "\\underbrace{x_{1}+x_{2}}_{\\text{zwei Terme}}",
+   "difficulty": "hard",
+   "answers": [
+    "\\underbrace{x_{1}+x_{2}}_{\\text{zwei Terme}}"
+   ],
+   "hint": "Zerlege die Formel gedanklich in Symbole, Hoch-/Tiefstellungen, Brüche und Markierungen.",
+   "why": "Die Gruppen definieren jeweils, auf welche Teile die einzelnen Befehle wirken."
+  },
+  {
+   "title": "Kombinierte Syntax 6",
+   "prompt": "Schreibe den gesamten komplexeren LaTeX-Ausdruck; beachte die Reihenfolge von Befehlen und Klammern.",
+   "render": "\\left(\\frac{\\vec{a}\\cdot\\vec{b}}{\\sqrt{x^2+y^2}}\\right)",
+   "difficulty": "hard",
+   "answers": [
+    "\\left(\\frac{\\vec{a}\\cdot\\vec{b}}{\\sqrt{x^2+y^2}}\\right)"
+   ],
+   "hint": "Zerlege die Formel gedanklich in Symbole, Hoch-/Tiefstellungen, Brüche und Markierungen.",
+   "why": "Die Gruppen definieren jeweils, auf welche Teile die einzelnen Befehle wirken."
+  }
+ ],
+ "fix": [
+  {
+   "title": "Symbolfehler 1: reellen Zahlen",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\mathbb{R}",
+   "difficulty": "easy",
+   "bad": "\\mathb{R}",
+   "answers": [
+    "\\mathbb{R}"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\mathbb benötigt die geschweifte Gruppe {R}."
+  },
+  {
+   "title": "Symbolfehler 2: Malpunkt",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\cdot",
+   "difficulty": "easy",
+   "bad": "\\cdt",
+   "answers": [
+    "\\cdot"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\cdot erzeugt einen mittigen Multiplikationspunkt."
+  },
+  {
+   "title": "Symbolfehler 3: Elementzeichen",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\in",
+   "difficulty": "easy",
+   "bad": "\\ni",
+   "answers": [
+    "\\in"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\in bedeutet „ist Element von“."
+  },
+  {
+   "title": "Symbolfehler 4: Nicht-Elementzeichen",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\notin",
+   "difficulty": "easy",
+   "bad": "\\in",
+   "answers": [
+    "\\notin"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\notin bedeutet „ist kein Element von“."
+  },
+  {
+   "title": "Symbolfehler 5: Kleiner-gleich-Zeichen",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\leq",
+   "difficulty": "easy",
+   "bad": "\\geq",
+   "answers": [
+    "\\leq"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\leq steht für „kleiner oder gleich“."
+  },
+  {
+   "title": "Symbolfehler 6: Größer-gleich-Zeichen",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\geq",
+   "difficulty": "easy",
+   "bad": "\\leq",
+   "answers": [
+    "\\geq"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\geq steht für „größer oder gleich“."
+  },
+  {
+   "title": "Symbolfehler 7: Multiplikationskreuz",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\times",
+   "difficulty": "easy",
+   "bad": "\\time",
+   "answers": [
+    "\\times"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\times erzeugt das Multiplikationskreuz."
+  },
+  {
+   "title": "Symbolfehler 8: Parallelzeichen",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\parallel",
+   "difficulty": "easy",
+   "bad": "\\perp",
+   "answers": [
+    "\\parallel"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\parallel zeigt an, dass zwei Geraden parallel sind."
+  },
+  {
+   "title": "Symbolfehler 9: Doppelpfeil nach rechts",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\Rightarrow",
+   "difficulty": "easy",
+   "bad": "\\rightarrow",
+   "answers": [
+    "\\Rightarrow"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\Rightarrow erzeugt einen Doppelpfeil nach rechts."
+  },
+  {
+   "title": "Symbolfehler 10: Doppelpfeil nach links",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\Leftarrow",
+   "difficulty": "easy",
+   "bad": "\\leftarrow",
+   "answers": [
+    "\\Leftarrow"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\Leftarrow erzeugt einen Doppelpfeil nach links."
+  },
+  {
+   "title": "Symbolfehler 11: Punkt über x",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\dot{x}",
+   "difficulty": "easy",
+   "bad": "\\dott{x}",
+   "answers": [
+    "\\dot{x}"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\dot{x} setzt einen Punkt über x."
+  },
+  {
+   "title": "Symbolfehler 12: Dach über x",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\hat{x}",
+   "difficulty": "easy",
+   "bad": "\\hatx",
+   "answers": [
+    "\\hat{x}"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\hat{x} setzt ein kleines Dach über x."
+  },
+  {
+   "title": "Symbolfehler 13: Tilde über x",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\tilde{x}",
+   "difficulty": "easy",
+   "bad": "\\tilde{x",
+   "answers": [
+    "\\tilde{x}"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\tilde{x} setzt eine geschwungene Linie über x."
+  },
+  {
+   "title": "Symbolfehler 14: großen griechischen Buchstaben Sigma",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\Sigma",
+   "difficulty": "easy",
+   "bad": "\\sum",
+   "answers": [
+    "\\Sigma"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\Sigma ist ein griechischer Buchstabe, nicht das Summenzeichen."
+  },
+  {
+   "title": "Symbolfehler 15: Ungefähr-gleich-Zeichen",
+   "prompt": "Der gezeigte Code erzeugt nicht das gewünschte Symbol. Korrigiere den Befehl.",
+   "render": "\\approx",
+   "difficulty": "easy",
+   "bad": "\\aprox",
+   "answers": [
+    "\\approx"
+   ],
+   "hint": "Kontrolliere die genaue Schreibweise und bei Pfeilen die Großschreibung.",
+   "why": "\\approx bedeutet „ungefähr gleich“."
+  },
+  {
+   "title": "Wurzelbefehl korrigieren 1",
+   "prompt": "Repariere den Code so, dass eine Quadratwurzel mit dem angegebenen Radikanden entsteht.",
+   "render": "\\sqrt{x}",
+   "difficulty": "easy",
+   "bad": "\\sqr{x}",
+   "answers": [
+    "\\sqrt{x}"
+   ],
+   "hint": "Eine Quadratwurzel schreibt man als \\sqrt{Radikand}.",
+   "why": "\\sqrt{...} ist der richtige Befehl für die Quadratwurzel."
+  },
+  {
+   "title": "Wurzelbefehl korrigieren 2",
+   "prompt": "Repariere den Code so, dass eine Quadratwurzel mit dem angegebenen Radikanden entsteht.",
+   "render": "\\sqrt{9}",
+   "difficulty": "easy",
+   "bad": "\\wurzel{9}",
+   "answers": [
+    "\\sqrt{9}"
+   ],
+   "hint": "Eine Quadratwurzel schreibt man als \\sqrt{Radikand}.",
+   "why": "\\sqrt{...} ist der richtige Befehl für die Quadratwurzel."
+  },
+  {
+   "title": "Wurzelbefehl korrigieren 3",
+   "prompt": "Repariere den Code so, dass eine Quadratwurzel mit dem angegebenen Radikanden entsteht.",
+   "render": "\\sqrt{a}",
+   "difficulty": "easy",
+   "bad": "\\srqt{a}",
+   "answers": [
+    "\\sqrt{a}"
+   ],
+   "hint": "Eine Quadratwurzel schreibt man als \\sqrt{Radikand}.",
+   "why": "\\sqrt{...} ist der richtige Befehl für die Quadratwurzel."
+  },
+  {
+   "title": "Wurzelbefehl korrigieren 4",
+   "prompt": "Repariere den Code so, dass eine Quadratwurzel mit dem angegebenen Radikanden entsteht.",
+   "render": "\\sqrt{y}",
+   "difficulty": "easy",
+   "bad": "\\sqrt[{y}]",
+   "answers": [
+    "\\sqrt{y}"
+   ],
+   "hint": "Eine Quadratwurzel schreibt man als \\sqrt{Radikand}.",
+   "why": "\\sqrt{...} ist der richtige Befehl für die Quadratwurzel."
+  },
+  {
+   "title": "Wurzelbefehl korrigieren 5",
+   "prompt": "Repariere den Code so, dass eine Quadratwurzel mit dem angegebenen Radikanden entsteht.",
+   "render": "\\sqrt{16}",
+   "difficulty": "easy",
+   "bad": "\\sqr{16}",
+   "answers": [
+    "\\sqrt{16}"
+   ],
+   "hint": "Eine Quadratwurzel schreibt man als \\sqrt{Radikand}.",
+   "why": "\\sqrt{...} ist der richtige Befehl für die Quadratwurzel."
+  },
+  {
+   "title": "Bruch reparieren 1",
+   "prompt": "Gesucht ist ein Bruch mit Zähler 3 und Nenner 4. Was muss korrigiert werden?",
+   "render": "\\frac{3}{4}",
+   "difficulty": "easy",
+   "bad": "\\frac{3}",
+   "answers": [
+    "\\frac{3}{4}"
+   ],
+   "hint": "Der Befehl lautet \\frac und braucht zwei Argumente.",
+   "why": "Ein Bruch hat die Form \\frac{Zähler}{Nenner}."
+  },
+  {
+   "title": "Bruch reparieren 2",
+   "prompt": "Gesucht ist ein Bruch mit Zähler 5 und Nenner 8. Was muss korrigiert werden?",
+   "render": "\\frac{5}{8}",
+   "difficulty": "easy",
+   "bad": "\\frc{5}{8}",
+   "answers": [
+    "\\frac{5}{8}"
+   ],
+   "hint": "Der Befehl lautet \\frac und braucht zwei Argumente.",
+   "why": "Ein Bruch hat die Form \\frac{Zähler}{Nenner}."
+  },
+  {
+   "title": "Bruch reparieren 3",
+   "prompt": "Gesucht ist ein Bruch mit Zähler a und Nenner b. Was muss korrigiert werden?",
+   "render": "\\frac{a}{b}",
+   "difficulty": "easy",
+   "bad": "\\frac{a}",
+   "answers": [
+    "\\frac{a}{b}"
+   ],
+   "hint": "Der Befehl lautet \\frac und braucht zwei Argumente.",
+   "why": "Ein Bruch hat die Form \\frac{Zähler}{Nenner}."
+  },
+  {
+   "title": "Bruch reparieren 4",
+   "prompt": "Gesucht ist ein Bruch mit Zähler x und Nenner 7. Was muss korrigiert werden?",
+   "render": "\\frac{x}{7}",
+   "difficulty": "easy",
+   "bad": "\\frc{x}{7}",
+   "answers": [
+    "\\frac{x}{7}"
+   ],
+   "hint": "Der Befehl lautet \\frac und braucht zwei Argumente.",
+   "why": "Ein Bruch hat die Form \\frac{Zähler}{Nenner}."
+  },
+  {
+   "title": "Bruch reparieren 5",
+   "prompt": "Gesucht ist ein Bruch mit Zähler 11 und Nenner 12. Was muss korrigiert werden?",
+   "render": "\\frac{11}{12}",
+   "difficulty": "easy",
+   "bad": "\\frac{11}",
+   "answers": [
+    "\\frac{11}{12}"
+   ],
+   "hint": "Der Befehl lautet \\frac und braucht zwei Argumente.",
+   "why": "Ein Bruch hat die Form \\frac{Zähler}{Nenner}."
+  },
+  {
+   "title": "Zwei Zeichen zusammenfassen 1",
+   "prompt": "Beide Ziffern sollen gemeinsam hoch- beziehungsweise tiefgestellt werden.",
+   "render": "x^{24}",
+   "difficulty": "easy",
+   "bad": "x^24",
+   "answers": [
+    "x^{24}"
+   ],
+   "hint": "Fasse die zwei Ziffern mit { } zusammen.",
+   "why": "Ohne Gruppierung wirkt ^ beziehungsweise _ nur auf das nächste Zeichen."
+  },
+  {
+   "title": "Zwei Zeichen zusammenfassen 2",
+   "prompt": "Beide Ziffern sollen gemeinsam hoch- beziehungsweise tiefgestellt werden.",
+   "render": "a_{13}",
+   "difficulty": "easy",
+   "bad": "a_13",
+   "answers": [
+    "a_{13}"
+   ],
+   "hint": "Fasse die zwei Ziffern mit { } zusammen.",
+   "why": "Ohne Gruppierung wirkt ^ beziehungsweise _ nur auf das nächste Zeichen."
+  },
+  {
+   "title": "Zwei Zeichen zusammenfassen 3",
+   "prompt": "Beide Ziffern sollen gemeinsam hoch- beziehungsweise tiefgestellt werden.",
+   "render": "F^{42}",
+   "difficulty": "easy",
+   "bad": "F^42",
+   "answers": [
+    "F^{42}"
+   ],
+   "hint": "Fasse die zwei Ziffern mit { } zusammen.",
+   "why": "Ohne Gruppierung wirkt ^ beziehungsweise _ nur auf das nächste Zeichen."
+  },
+  {
+   "title": "Zwei Zeichen zusammenfassen 4",
+   "prompt": "Beide Ziffern sollen gemeinsam hoch- beziehungsweise tiefgestellt werden.",
+   "render": "y_{27}",
+   "difficulty": "easy",
+   "bad": "y_27",
+   "answers": [
+    "y_{27}"
+   ],
+   "hint": "Fasse die zwei Ziffern mit { } zusammen.",
+   "why": "Ohne Gruppierung wirkt ^ beziehungsweise _ nur auf das nächste Zeichen."
+  },
+  {
+   "title": "Index und Exponent prüfen 1",
+   "prompt": "Sowohl der vollständige Index als auch der Exponent sollen so aussehen wie in der Zielformel.",
+   "render": "v_{max}^{2}",
+   "difficulty": "medium",
+   "bad": "v_max^2",
+   "answers": [
+    "v_{max}^{2}"
+   ],
+   "hint": "Füge nach _ und ^ jeweils eine geschweifte Klammergruppe ein.",
+   "why": "Mehrteilige Indizes und Exponenten werden getrennt mit {...} gruppiert."
+  },
+  {
+   "title": "Index und Exponent prüfen 2",
+   "prompt": "Sowohl der vollständige Index als auch der Exponent sollen so aussehen wie in der Zielformel.",
+   "render": "a_{ij}^{3}",
+   "difficulty": "medium",
+   "bad": "a_ij^3",
+   "answers": [
+    "a_{ij}^{3}"
+   ],
+   "hint": "Füge nach _ und ^ jeweils eine geschweifte Klammergruppe ein.",
+   "why": "Mehrteilige Indizes und Exponenten werden getrennt mit {...} gruppiert."
+  },
+  {
+   "title": "Index und Exponent prüfen 3",
+   "prompt": "Sowohl der vollständige Index als auch der Exponent sollen so aussehen wie in der Zielformel.",
+   "render": "F_{12}^{n}",
+   "difficulty": "medium",
+   "bad": "F_12^n",
+   "answers": [
+    "F_{12}^{n}"
+   ],
+   "hint": "Füge nach _ und ^ jeweils eine geschweifte Klammergruppe ein.",
+   "why": "Mehrteilige Indizes und Exponenten werden getrennt mit {...} gruppiert."
+  },
+  {
+   "title": "Index und Exponent prüfen 4",
+   "prompt": "Sowohl der vollständige Index als auch der Exponent sollen so aussehen wie in der Zielformel.",
+   "render": "x_{n+1}^{2}",
+   "difficulty": "medium",
+   "bad": "x_n+1^2",
+   "answers": [
+    "x_{n+1}^{2}"
+   ],
+   "hint": "Füge nach _ und ^ jeweils eine geschweifte Klammergruppe ein.",
+   "why": "Mehrteilige Indizes und Exponenten werden getrennt mit {...} gruppiert."
+  },
+  {
+   "title": "Index und Exponent prüfen 5",
+   "prompt": "Sowohl der vollständige Index als auch der Exponent sollen so aussehen wie in der Zielformel.",
+   "render": "T_{in}^{4}",
+   "difficulty": "medium",
+   "bad": "T_in^4",
+   "answers": [
+    "T_{in}^{4}"
+   ],
+   "hint": "Füge nach _ und ^ jeweils eine geschweifte Klammergruppe ein.",
+   "why": "Mehrteilige Indizes und Exponenten werden getrennt mit {...} gruppiert."
+  },
+  {
+   "title": "Index und Exponent prüfen 6",
+   "prompt": "Sowohl der vollständige Index als auch der Exponent sollen so aussehen wie in der Zielformel.",
+   "render": "A_{0}^{12}",
+   "difficulty": "medium",
+   "bad": "A_0^12",
+   "answers": [
+    "A_{0}^{12}"
+   ],
+   "hint": "Füge nach _ und ^ jeweils eine geschweifte Klammergruppe ein.",
+   "why": "Mehrteilige Indizes und Exponenten werden getrennt mit {...} gruppiert."
+  },
+  {
+   "title": "Der Nenner muss vollständig sein 1",
+   "prompt": "Repariere die unvollständige Gruppierung, sodass der gesamte Nenner zu diesem Bruch gehört.",
+   "render": "\\frac{a+b}{c}",
+   "difficulty": "medium",
+   "bad": "\\frac{a+b}c",
+   "answers": [
+    "\\frac{a+b}{c}"
+   ],
+   "hint": "Setze den ganzen Nenner in ein zweites Paar geschweifter Klammern.",
+   "why": "Bei \\frac{...}{...} muss der vollständige Nenner gruppiert sein."
+  },
+  {
+   "title": "Der Nenner muss vollständig sein 2",
+   "prompt": "Repariere die unvollständige Gruppierung, sodass der gesamte Nenner zu diesem Bruch gehört.",
+   "render": "\\frac{x^2+1}{x+1}",
+   "difficulty": "medium",
+   "bad": "\\frac{x^2+1}x+1",
+   "answers": [
+    "\\frac{x^2+1}{x+1}"
+   ],
+   "hint": "Setze den ganzen Nenner in ein zweites Paar geschweifter Klammern.",
+   "why": "Bei \\frac{...}{...} muss der vollständige Nenner gruppiert sein."
+  },
+  {
+   "title": "Der Nenner muss vollständig sein 3",
+   "prompt": "Repariere die unvollständige Gruppierung, sodass der gesamte Nenner zu diesem Bruch gehört.",
+   "render": "\\frac{2x-3}{5}",
+   "difficulty": "medium",
+   "bad": "\\frac{2x-3}5",
+   "answers": [
+    "\\frac{2x-3}{5}"
+   ],
+   "hint": "Setze den ganzen Nenner in ein zweites Paar geschweifter Klammern.",
+   "why": "Bei \\frac{...}{...} muss der vollständige Nenner gruppiert sein."
+  },
+  {
+   "title": "Der Nenner muss vollständig sein 4",
+   "prompt": "Repariere die unvollständige Gruppierung, sodass der gesamte Nenner zu diesem Bruch gehört.",
+   "render": "\\frac{p+q}{r+s}",
+   "difficulty": "medium",
+   "bad": "\\frac{p+q}r+s",
+   "answers": [
+    "\\frac{p+q}{r+s}"
+   ],
+   "hint": "Setze den ganzen Nenner in ein zweites Paar geschweifter Klammern.",
+   "why": "Bei \\frac{...}{...} muss der vollständige Nenner gruppiert sein."
+  },
+  {
+   "title": "Der Nenner muss vollständig sein 5",
+   "prompt": "Repariere die unvollständige Gruppierung, sodass der gesamte Nenner zu diesem Bruch gehört.",
+   "render": "\\frac{m^2}{n^2+1}",
+   "difficulty": "medium",
+   "bad": "\\frac{m^2}n^2+1",
+   "answers": [
+    "\\frac{m^2}{n^2+1}"
+   ],
+   "hint": "Setze den ganzen Nenner in ein zweites Paar geschweifter Klammern.",
+   "why": "Bei \\frac{...}{...} muss der vollständige Nenner gruppiert sein."
+  },
+  {
+   "title": "Der Nenner muss vollständig sein 6",
+   "prompt": "Repariere die unvollständige Gruppierung, sodass der gesamte Nenner zu diesem Bruch gehört.",
+   "render": "\\frac{a-1}{b+1}",
+   "difficulty": "medium",
+   "bad": "\\frac{a-1}b+1",
+   "answers": [
+    "\\frac{a-1}{b+1}"
+   ],
+   "hint": "Setze den ganzen Nenner in ein zweites Paar geschweifter Klammern.",
+   "why": "Bei \\frac{...}{...} muss der vollständige Nenner gruppiert sein."
+  },
+  {
+   "title": "Wurzelstrich verlängern 1",
+   "prompt": "Der ganze Ausdruck soll unter der Wurzel stehen, nicht nur der erste Teil.",
+   "render": "\\sqrt{x^2+y^2}",
+   "difficulty": "medium",
+   "bad": "\\sqrt x^2+y^2",
+   "answers": [
+    "\\sqrt{x^2+y^2}"
+   ],
+   "hint": "Die Wurzel muss den gesamten Ausdruck in { ... } enthalten.",
+   "why": "\\sqrt ohne Klammergruppe erfasst nicht zuverlässig den beabsichtigten ganzen Term."
+  },
+  {
+   "title": "Wurzelstrich verlängern 2",
+   "prompt": "Der ganze Ausdruck soll unter der Wurzel stehen, nicht nur der erste Teil.",
+   "render": "\\sqrt{a+b}",
+   "difficulty": "medium",
+   "bad": "\\sqrt a+b",
+   "answers": [
+    "\\sqrt{a+b}"
+   ],
+   "hint": "Die Wurzel muss den gesamten Ausdruck in { ... } enthalten.",
+   "why": "\\sqrt ohne Klammergruppe erfasst nicht zuverlässig den beabsichtigten ganzen Term."
+  },
+  {
+   "title": "Wurzelstrich verlängern 3",
+   "prompt": "Der ganze Ausdruck soll unter der Wurzel stehen, nicht nur der erste Teil.",
+   "render": "\\sqrt{2x+3}",
+   "difficulty": "medium",
+   "bad": "\\sqrt 2x+3",
+   "answers": [
+    "\\sqrt{2x+3}"
+   ],
+   "hint": "Die Wurzel muss den gesamten Ausdruck in { ... } enthalten.",
+   "why": "\\sqrt ohne Klammergruppe erfasst nicht zuverlässig den beabsichtigten ganzen Term."
+  },
+  {
+   "title": "Wurzelstrich verlängern 4",
+   "prompt": "Der ganze Ausdruck soll unter der Wurzel stehen, nicht nur der erste Teil.",
+   "render": "\\sqrt{\\frac{1}{2}}",
+   "difficulty": "medium",
+   "bad": "\\sqrt \\frac{1}{2}",
+   "answers": [
+    "\\sqrt{\\frac{1}{2}}"
+   ],
+   "hint": "Die Wurzel muss den gesamten Ausdruck in { ... } enthalten.",
+   "why": "\\sqrt ohne Klammergruppe erfasst nicht zuverlässig den beabsichtigten ganzen Term."
+  },
+  {
+   "title": "Wurzelstrich verlängern 5",
+   "prompt": "Der ganze Ausdruck soll unter der Wurzel stehen, nicht nur der erste Teil.",
+   "render": "\\sqrt{x_{12}}",
+   "difficulty": "medium",
+   "bad": "\\sqrt x_{12}",
+   "answers": [
+    "\\sqrt{x_{12}}"
+   ],
+   "hint": "Die Wurzel muss den gesamten Ausdruck in { ... } enthalten.",
+   "why": "\\sqrt ohne Klammergruppe erfasst nicht zuverlässig den beabsichtigten ganzen Term."
+  },
+  {
+   "title": "Wurzelstrich verlängern 6",
+   "prompt": "Der ganze Ausdruck soll unter der Wurzel stehen, nicht nur der erste Teil.",
+   "render": "\\sqrt{m^2+n^2}",
+   "difficulty": "medium",
+   "bad": "\\sqrt m^2+n^2",
+   "answers": [
+    "\\sqrt{m^2+n^2}"
+   ],
+   "hint": "Die Wurzel muss den gesamten Ausdruck in { ... } enthalten.",
+   "why": "\\sqrt ohne Klammergruppe erfasst nicht zuverlässig den beabsichtigten ganzen Term."
+  },
+  {
+   "title": "Mitwachsende Klammer korrigieren 1",
+   "prompt": "Der fehlerhafte Befehl soll korrekt passende Klammern um die Zielformel erzeugen.",
+   "render": "\\left(\\frac{a+b}{c}\\right)",
+   "difficulty": "medium",
+   "bad": "\\left(\\frac{a+b}{c}\\rigth)",
+   "answers": [
+    "\\left(\\frac{a+b}{c}\\right)"
+   ],
+   "hint": "Die Befehle heißen genau \\left und \\right.",
+   "why": "Ein skalierendes Begrenzungspaar benötigt die exakt geschriebenen Befehle \\left und \\right."
+  },
+  {
+   "title": "Mitwachsende Klammer korrigieren 2",
+   "prompt": "Der fehlerhafte Befehl soll korrekt passende Klammern um die Zielformel erzeugen.",
+   "render": "\\left[\\frac{x+1}{y+1}\\right]",
+   "difficulty": "medium",
+   "bad": "\\lef[\\frac{x+1}{y+1}\\right]",
+   "answers": [
+    "\\left[\\frac{x+1}{y+1}\\right]"
+   ],
+   "hint": "Die Befehle heißen genau \\left und \\right.",
+   "why": "Ein skalierendes Begrenzungspaar benötigt die exakt geschriebenen Befehle \\left und \\right."
+  },
+  {
+   "title": "Mitwachsende Klammer korrigieren 3",
+   "prompt": "Der fehlerhafte Befehl soll korrekt passende Klammern um die Zielformel erzeugen.",
+   "render": "\\left(\\frac{1}{1+\\frac{1}{2}}\\right)",
+   "difficulty": "medium",
+   "bad": "\\left(\\frac{1}{1+\\frac{1}{2}}\\rigth)",
+   "answers": [
+    "\\left(\\frac{1}{1+\\frac{1}{2}}\\right)"
+   ],
+   "hint": "Die Befehle heißen genau \\left und \\right.",
+   "why": "Ein skalierendes Begrenzungspaar benötigt die exakt geschriebenen Befehle \\left und \\right."
+  },
+  {
+   "title": "Mitwachsende Klammer korrigieren 4",
+   "prompt": "Der fehlerhafte Befehl soll korrekt passende Klammern um die Zielformel erzeugen.",
+   "render": "\\left\\{\\frac{a}{b}+1\\right\\}",
+   "difficulty": "medium",
+   "bad": "\\lef\\{\\frac{a}{b}+1\\right\\}",
+   "answers": [
+    "\\left\\{\\frac{a}{b}+1\\right\\}"
+   ],
+   "hint": "Die Befehle heißen genau \\left und \\right.",
+   "why": "Ein skalierendes Begrenzungspaar benötigt die exakt geschriebenen Befehle \\left und \\right."
+  },
+  {
+   "title": "Mitwachsende Klammer korrigieren 5",
+   "prompt": "Der fehlerhafte Befehl soll korrekt passende Klammern um die Zielformel erzeugen.",
+   "render": "\\left|\\frac{x-1}{2}\\right|",
+   "difficulty": "medium",
+   "bad": "\\left|\\frac{x-1}{2}\\rigth|",
+   "answers": [
+    "\\left|\\frac{x-1}{2}\\right|"
+   ],
+   "hint": "Die Befehle heißen genau \\left und \\right.",
+   "why": "Ein skalierendes Begrenzungspaar benötigt die exakt geschriebenen Befehle \\left und \\right."
+  },
+  {
+   "title": "Mitwachsende Klammer korrigieren 6",
+   "prompt": "Der fehlerhafte Befehl soll korrekt passende Klammern um die Zielformel erzeugen.",
+   "render": "\\left(\\sqrt{\\frac{a+b}{c}}\\right)",
+   "difficulty": "medium",
+   "bad": "\\lef(\\sqrt{\\frac{a+b}{c}}\\right)",
+   "answers": [
+    "\\left(\\sqrt{\\frac{a+b}{c}}\\right)"
+   ],
+   "hint": "Die Befehle heißen genau \\left und \\right.",
+   "why": "Ein skalierendes Begrenzungspaar benötigt die exakt geschriebenen Befehle \\left und \\right."
+  },
+  {
+   "title": "Mitwachsende Klammer korrigieren 7",
+   "prompt": "Der fehlerhafte Befehl soll korrekt passende Klammern um die Zielformel erzeugen.",
+   "render": "\\left(\\frac{3}{4}\\right)",
+   "difficulty": "medium",
+   "bad": "\\left(\\frac{3}{4}\\rigth)",
+   "answers": [
+    "\\left(\\frac{3}{4}\\right)"
+   ],
+   "hint": "Die Befehle heißen genau \\left und \\right.",
+   "why": "Ein skalierendes Begrenzungspaar benötigt die exakt geschriebenen Befehle \\left und \\right."
+  },
+  {
+   "title": "Operator verwechselt 1",
+   "prompt": "Gesucht ist: a ist Element von R. Ersetze das falsche Zeichen durch den passenden Befehl.",
+   "render": "a\\in\\mathbb{R}",
+   "difficulty": "medium",
+   "bad": "a\\notin\\mathbb{R}",
+   "answers": [
+    "a\\in\\mathbb{R}"
+   ],
+   "hint": "Die Vergleichs- und Pfeilbefehle dürfen nicht vertauscht werden.",
+   "why": "Der richtige Operator entspricht genau der beschriebenen Beziehung."
+  },
+  {
+   "title": "Operator verwechselt 2",
+   "prompt": "Gesucht ist: b ist nicht Element von R. Ersetze das falsche Zeichen durch den passenden Befehl.",
+   "render": "b\\notin\\mathbb{R}",
+   "difficulty": "medium",
+   "bad": "b\\in\\mathbb{R}",
+   "answers": [
+    "b\\notin\\mathbb{R}"
+   ],
+   "hint": "Die Vergleichs- und Pfeilbefehle dürfen nicht vertauscht werden.",
+   "why": "Der richtige Operator entspricht genau der beschriebenen Beziehung."
+  },
+  {
+   "title": "Operator verwechselt 3",
+   "prompt": "Gesucht ist: kleiner oder gleich. Ersetze das falsche Zeichen durch den passenden Befehl.",
+   "render": "x\\leq 5",
+   "difficulty": "medium",
+   "bad": "x\\geq 5",
+   "answers": [
+    "x\\leq 5"
+   ],
+   "hint": "Die Vergleichs- und Pfeilbefehle dürfen nicht vertauscht werden.",
+   "why": "Der richtige Operator entspricht genau der beschriebenen Beziehung."
+  },
+  {
+   "title": "Operator verwechselt 4",
+   "prompt": "Gesucht ist: größer oder gleich. Ersetze das falsche Zeichen durch den passenden Befehl.",
+   "render": "y\\geq 2",
+   "difficulty": "medium",
+   "bad": "y\\leq 2",
+   "answers": [
+    "y\\geq 2"
+   ],
+   "hint": "Die Vergleichs- und Pfeilbefehle dürfen nicht vertauscht werden.",
+   "why": "Der richtige Operator entspricht genau der beschriebenen Beziehung."
+  },
+  {
+   "title": "Operator verwechselt 5",
+   "prompt": "Gesucht ist: parallel. Ersetze das falsche Zeichen durch den passenden Befehl.",
+   "render": "g\\parallel h",
+   "difficulty": "medium",
+   "bad": "g\\perp h",
+   "answers": [
+    "g\\parallel h"
+   ],
+   "hint": "Die Vergleichs- und Pfeilbefehle dürfen nicht vertauscht werden.",
+   "why": "Der richtige Operator entspricht genau der beschriebenen Beziehung."
+  },
+  {
+   "title": "Operator verwechselt 6",
+   "prompt": "Gesucht ist: Doppelpfeil nach rechts. Ersetze das falsche Zeichen durch den passenden Befehl.",
+   "render": "x\\Rightarrow y",
+   "difficulty": "medium",
+   "bad": "x\\Leftarrow y",
+   "answers": [
+    "x\\Rightarrow y"
+   ],
+   "hint": "Die Vergleichs- und Pfeilbefehle dürfen nicht vertauscht werden.",
+   "why": "Der richtige Operator entspricht genau der beschriebenen Beziehung."
+  },
+  {
+   "title": "Operator verwechselt 7",
+   "prompt": "Gesucht ist: Skalarprodukt mit Malpunkt. Ersetze das falsche Zeichen durch den passenden Befehl.",
+   "render": "\\vec{F}\\cdot\\vec{x}",
+   "difficulty": "medium",
+   "bad": "\\vec{F}\\times\\vec{x}",
+   "answers": [
+    "\\vec{F}\\cdot\\vec{x}"
+   ],
+   "hint": "Die Vergleichs- und Pfeilbefehle dürfen nicht vertauscht werden.",
+   "why": "Der richtige Operator entspricht genau der beschriebenen Beziehung."
+  },
+  {
+   "title": "Gleichungen ausrichten 1",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}3x+2 &=14 \\\\ 3x &=12 \\\\ x &=4\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n3x+2 = 14 \\\\\n3x = 12 \\\\\nx = 4\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n3x+2 &=14 \\\\\n3x &=12 \\\\\nx &=4\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 2",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}2x-6 &=10 \\\\ 2x &=16 \\\\ x &=8\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n2x-6 = 10 \\\\\n2x = 16 \\\\\nx = 8\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n2x-6 &=10 \\\\\n2x &=16 \\\\\nx &=8\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 3",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}5x+1 &=16 \\\\ 5x &=15 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n5x+1 = 16 \\\\\n5x = 15 \\\\\nx = 3\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n5x+1 &=16 \\\\\n5x &=15 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 4",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}4x-8 &=0 \\\\ 4x &=8 \\\\ x &=2\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n4x-8 = 0 \\\\\n4x = 8 \\\\\nx = 2\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n4x-8 &=0 \\\\\n4x &=8 \\\\\nx &=2\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 5",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}7x+3 &=24 \\\\ 7x &=21 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n7x+3 = 24 \\\\\n7x = 21 \\\\\nx = 3\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n7x+3 &=24 \\\\\n7x &=21 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 6",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}6x-4 &=14 \\\\ 6x &=18 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n6x-4 = 14 \\\\\n6x = 18 \\\\\nx = 3\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n6x-4 &=14 \\\\\n6x &=18 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 7",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}9x+2 &=47 \\\\ 9x &=45 \\\\ x &=5\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n9x+2 = 47 \\\\\n9x = 45 \\\\\nx = 5\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n9x+2 &=47 \\\\\n9x &=45 \\\\\nx &=5\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 8",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}8x-7 &=17 \\\\ 8x &=24 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n8x-7 = 17 \\\\\n8x = 24 \\\\\nx = 3\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n8x-7 &=17 \\\\\n8x &=24 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Gleichungen ausrichten 9",
+   "prompt": "Setze in jeder Zeile einen Ausrichtungsanker direkt vor das Gleichheitszeichen.",
+   "render": "\\begin{aligned}5x+2 &=22 \\\\ 5x &=20 \\\\ x &=4\\end{aligned}",
+   "difficulty": "hard",
+   "bad": "\\begin{align*}\n5x+2 = 22 \\\\\n5x = 20 \\\\\nx = 4\n\\end{align*}",
+   "answers": [
+    "\\begin{align*}\n5x+2 &=22 \\\\\n5x &=20 \\\\\nx &=4\n\\end{align*}"
+   ],
+   "hint": "Vor jedes = kommt ein &; Zeilen enden jeweils mit \\\\ (außer der letzten).",
+   "why": "\\begin{align*} ... \\end{align*} richtet alle Stellen mit & untereinander aus."
+  },
+  {
+   "title": "Verschachtelten Bruch reparieren 1",
+   "prompt": "Die Bruchstruktur soll unverändert bleiben. Korrigiere die falsch geschriebenen Bruchbefehle.",
+   "render": "\\frac{1}{1+\\frac{1}{x}}",
+   "difficulty": "hard",
+   "bad": "\\frc{1}{1+\\frac{1}{x}}",
+   "answers": [
+    "\\frac{1}{1+\\frac{1}{x}}"
+   ],
+   "hint": "Auch innere Brüche benötigen den Befehl \\frac mit zwei Argumenten.",
+   "why": "In allen Ebenen der verschachtelten Struktur heißt der Bruchbefehl \\frac."
+  },
+  {
+   "title": "Verschachtelten Bruch reparieren 2",
+   "prompt": "Die Bruchstruktur soll unverändert bleiben. Korrigiere die falsch geschriebenen Bruchbefehle.",
+   "render": "\\frac{\\frac{a}{b}}{c}",
+   "difficulty": "hard",
+   "bad": "\\frc{\\frc{a}{b}}{c}",
+   "answers": [
+    "\\frac{\\frac{a}{b}}{c}"
+   ],
+   "hint": "Auch innere Brüche benötigen den Befehl \\frac mit zwei Argumenten.",
+   "why": "In allen Ebenen der verschachtelten Struktur heißt der Bruchbefehl \\frac."
+  },
+  {
+   "title": "Verschachtelten Bruch reparieren 3",
+   "prompt": "Die Bruchstruktur soll unverändert bleiben. Korrigiere die falsch geschriebenen Bruchbefehle.",
+   "render": "\\frac{a+b}{\\frac{c}{d}}",
+   "difficulty": "hard",
+   "bad": "\\frc{a+b}{\\frac{c}{d}}",
+   "answers": [
+    "\\frac{a+b}{\\frac{c}{d}}"
+   ],
+   "hint": "Auch innere Brüche benötigen den Befehl \\frac mit zwei Argumenten.",
+   "why": "In allen Ebenen der verschachtelten Struktur heißt der Bruchbefehl \\frac."
+  },
+  {
+   "title": "Verschachtelten Bruch reparieren 4",
+   "prompt": "Die Bruchstruktur soll unverändert bleiben. Korrigiere die falsch geschriebenen Bruchbefehle.",
+   "render": "\\frac{1+\\frac{1}{2}}{3}",
+   "difficulty": "hard",
+   "bad": "\\frc{1+\\frc{1}{2}}{3}",
+   "answers": [
+    "\\frac{1+\\frac{1}{2}}{3}"
+   ],
+   "hint": "Auch innere Brüche benötigen den Befehl \\frac mit zwei Argumenten.",
+   "why": "In allen Ebenen der verschachtelten Struktur heißt der Bruchbefehl \\frac."
+  },
+  {
+   "title": "Verschachtelten Bruch reparieren 5",
+   "prompt": "Die Bruchstruktur soll unverändert bleiben. Korrigiere die falsch geschriebenen Bruchbefehle.",
+   "render": "\\frac{\\sqrt{x}}{\\frac{a}{b}}",
+   "difficulty": "hard",
+   "bad": "\\frc{\\sqrt{x}}{\\frac{a}{b}}",
+   "answers": [
+    "\\frac{\\sqrt{x}}{\\frac{a}{b}}"
+   ],
+   "hint": "Auch innere Brüche benötigen den Befehl \\frac mit zwei Argumenten.",
+   "why": "In allen Ebenen der verschachtelten Struktur heißt der Bruchbefehl \\frac."
+  },
+  {
+   "title": "Verschachtelten Bruch reparieren 6",
+   "prompt": "Die Bruchstruktur soll unverändert bleiben. Korrigiere die falsch geschriebenen Bruchbefehle.",
+   "render": "\\frac{\\frac{a+b}{c}}{d+1}",
+   "difficulty": "hard",
+   "bad": "\\frc{\\frc{a+b}{c}}{d+1}",
+   "answers": [
+    "\\frac{\\frac{a+b}{c}}{d+1}"
+   ],
+   "hint": "Auch innere Brüche benötigen den Befehl \\frac mit zwei Argumenten.",
+   "why": "In allen Ebenen der verschachtelten Struktur heißt der Bruchbefehl \\frac."
+  },
+  {
+   "title": "Verschachtelten Bruch reparieren 7",
+   "prompt": "Die Bruchstruktur soll unverändert bleiben. Korrigiere die falsch geschriebenen Bruchbefehle.",
+   "render": "\\frac{2}{\\frac{3}{4}}",
+   "difficulty": "hard",
+   "bad": "\\frc{2}{\\frac{3}{4}}",
+   "answers": [
+    "\\frac{2}{\\frac{3}{4}}"
+   ],
+   "hint": "Auch innere Brüche benötigen den Befehl \\frac mit zwei Argumenten.",
+   "why": "In allen Ebenen der verschachtelten Struktur heißt der Bruchbefehl \\frac."
+  },
+  {
+   "title": "Markierungsbefehl korrigieren 1",
+   "prompt": "Die Beschriftung soll über oder unter dem markierten Ausdruck stehen wie gezeigt.",
+   "render": "\\underbrace{x+y+z}_{\\text{Summe}}",
+   "difficulty": "hard",
+   "bad": "\\underbrac{x+y+z}_{\\text{Summe}}",
+   "answers": [
+    "\\underbrace{x+y+z}_{\\text{Summe}}"
+   ],
+   "hint": "Kontrolliere den gesamten Befehlsnamen: underbrace, overbrace, overset oder underset.",
+   "why": "Bei diesen Befehlen bestimmt der Name, ob die Beschriftung oberhalb oder unterhalb erscheint."
+  },
+  {
+   "title": "Markierungsbefehl korrigieren 2",
+   "prompt": "Die Beschriftung soll über oder unter dem markierten Ausdruck stehen wie gezeigt.",
+   "render": "\\overbrace{a+b+c}^{3\\text{ Terme}}",
+   "difficulty": "hard",
+   "bad": "\\overbrac{a+b+c}^{3\\text{ Terme}}",
+   "answers": [
+    "\\overbrace{a+b+c}^{3\\text{ Terme}}"
+   ],
+   "hint": "Kontrolliere den gesamten Befehlsnamen: underbrace, overbrace, overset oder underset.",
+   "why": "Bei diesen Befehlen bestimmt der Name, ob die Beschriftung oberhalb oder unterhalb erscheint."
+  },
+  {
+   "title": "Markierungsbefehl korrigieren 3",
+   "prompt": "Die Beschriftung soll über oder unter dem markierten Ausdruck stehen wie gezeigt.",
+   "render": "\\underset{x\\in\\mathbb{R}}{\\Rightarrow}",
+   "difficulty": "hard",
+   "bad": "\\underse{x\\in\\mathbb{R}}{\\Rightarrow}",
+   "answers": [
+    "\\underset{x\\in\\mathbb{R}}{\\Rightarrow}"
+   ],
+   "hint": "Kontrolliere den gesamten Befehlsnamen: underbrace, overbrace, overset oder underset.",
+   "why": "Bei diesen Befehlen bestimmt der Name, ob die Beschriftung oberhalb oder unterhalb erscheint."
+  },
+  {
+   "title": "Markierungsbefehl korrigieren 4",
+   "prompt": "Die Beschriftung soll über oder unter dem markierten Ausdruck stehen wie gezeigt.",
+   "render": "\\overset{!}{=}",
+   "difficulty": "hard",
+   "bad": "\\overse{!}{=}",
+   "answers": [
+    "\\overset{!}{=}"
+   ],
+   "hint": "Kontrolliere den gesamten Befehlsnamen: underbrace, overbrace, overset oder underset.",
+   "why": "Bei diesen Befehlen bestimmt der Name, ob die Beschriftung oberhalb oder unterhalb erscheint."
+  },
+  {
+   "title": "Markierungsbefehl korrigieren 5",
+   "prompt": "Die Beschriftung soll über oder unter dem markierten Ausdruck stehen wie gezeigt.",
+   "render": "\\underbrace{\\frac{a}{b}}_{c}",
+   "difficulty": "hard",
+   "bad": "\\underbrac{\\frac{a}{b}}_{c}",
+   "answers": [
+    "\\underbrace{\\frac{a}{b}}_{c}"
+   ],
+   "hint": "Kontrolliere den gesamten Befehlsnamen: underbrace, overbrace, overset oder underset.",
+   "why": "Bei diesen Befehlen bestimmt der Name, ob die Beschriftung oberhalb oder unterhalb erscheint."
+  },
+  {
+   "title": "Markierungsbefehl korrigieren 6",
+   "prompt": "Die Beschriftung soll über oder unter dem markierten Ausdruck stehen wie gezeigt.",
+   "render": "\\overbrace{\\sqrt{x^2+y^2}}^{r}",
+   "difficulty": "hard",
+   "bad": "\\overbrac{\\sqrt{x^2+y^2}}^{r}",
+   "answers": [
+    "\\overbrace{\\sqrt{x^2+y^2}}^{r}"
+   ],
+   "hint": "Kontrolliere den gesamten Befehlsnamen: underbrace, overbrace, overset oder underset.",
+   "why": "Bei diesen Befehlen bestimmt der Name, ob die Beschriftung oberhalb oder unterhalb erscheint."
+  },
+  {
+   "title": "Markierungsbefehl korrigieren 7",
+   "prompt": "Die Beschriftung soll über oder unter dem markierten Ausdruck stehen wie gezeigt.",
+   "render": "\\overset{n}{x}",
+   "difficulty": "hard",
+   "bad": "\\overse{n}{x}",
+   "answers": [
+    "\\overset{n}{x}"
+   ],
+   "hint": "Kontrolliere den gesamten Befehlsnamen: underbrace, overbrace, overset oder underset.",
+   "why": "Bei diesen Befehlen bestimmt der Name, ob die Beschriftung oberhalb oder unterhalb erscheint."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 1",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\vec{F}_{12}^{2}",
+   "difficulty": "hard",
+   "bad": "\\vec{F}_12^2",
+   "answers": [
+    "\\vec{F}_{12}^{2}"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 2",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\hat{x}_{n+1}+\\tilde{y}_{0}",
+   "difficulty": "hard",
+   "bad": "\\hat{x}_n+1+\\tilde{y}_0",
+   "answers": [
+    "\\hat{x}_{n+1}+\\tilde{y}_{0}"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 3",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\frac{\\dot{x}^{2}}{\\sqrt{a+b}}",
+   "difficulty": "hard",
+   "bad": "\\frac{\\dot{x}^2}{\\sqrt a+b}",
+   "answers": [
+    "\\frac{\\dot{x}^{2}}{\\sqrt{a+b}}"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 4",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\left(\\frac{x_{12}^{2}}{\\frac{1}{2}}\\right)",
+   "difficulty": "hard",
+   "bad": "\\left(\\frac{x_12^2}{\\frac{1}{2}}\\right)",
+   "answers": [
+    "\\left(\\frac{x_{12}^{2}}{\\frac{1}{2}}\\right)"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 5",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\underbrace{x_{1}+x_{2}}_{\\text{zwei Terme}}",
+   "difficulty": "hard",
+   "bad": "\\underbrce{x_{1}+x_{2}}_{\\text{zwei Terme}}",
+   "answers": [
+    "\\underbrace{x_{1}+x_{2}}_{\\text{zwei Terme}}"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 6",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\left(\\frac{\\vec{a}\\cdot\\vec{b}}{\\sqrt{x^2+y^2}}\\right)",
+   "difficulty": "hard",
+   "bad": "\\left(\\frac{\\vec{a}\\cdot\\vec{b}}{\\sqrt x^2+y^2}\\right)",
+   "answers": [
+    "\\left(\\frac{\\vec{a}\\cdot\\vec{b}}{\\sqrt{x^2+y^2}}\\right)"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 7",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\overset{a+b}{\\frac{x}{y}}",
+   "difficulty": "hard",
+   "bad": "\\overset{a+b}{\\frac{x}}",
+   "answers": [
+    "\\overset{a+b}{\\frac{x}{y}}"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  },
+  {
+   "title": "Mehrere Fehler entdecken 8",
+   "prompt": "Korrigiere den Quelltext vollständig, damit er genau der Zielformel entspricht.",
+   "render": "\\frac{\\underbrace{a+b}_{c}}{\\sqrt{x_{12}}}",
+   "difficulty": "hard",
+   "bad": "\\frac{\\underbrace{a+b}_{c}}{\\sqrt x_12}",
+   "answers": [
+    "\\frac{\\underbrace{a+b}_{c}}{\\sqrt{x_{12}}}"
+   ],
+   "hint": "Untersuche die Gruppierung der Indizes, Wurzeln und Brüche getrennt.",
+   "why": "Bei kombinierten Formeln muss jede Klammergruppe den passenden Teil des Terms umfassen."
+  }
+ ],
+ "know": [
+  {
+   "title": "Symbol erkennen 1: reellen Zahlen",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\mathbb{R}",
+   "difficulty": "easy",
+   "choices": [
+    "\\mathbb{R}",
+    "\\cdot",
+    "\\notin"
+   ],
+   "right": 0,
+   "why": "\\mathbb benötigt die geschweifte Gruppe {R}."
+  },
+  {
+   "title": "Symbol erkennen 2: Malpunkt",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\cdot",
+   "difficulty": "easy",
+   "choices": [
+    "\\in",
+    "\\cdot",
+    "\\leq"
+   ],
+   "right": 1,
+   "why": "\\cdot erzeugt einen mittigen Multiplikationspunkt."
+  },
+  {
+   "title": "Symbol erkennen 3: Elementzeichen",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\in",
+   "difficulty": "easy",
+   "choices": [
+    "\\notin",
+    "\\geq",
+    "\\in"
+   ],
+   "right": 2,
+   "why": "\\in bedeutet „ist Element von“."
+  },
+  {
+   "title": "Symbol erkennen 4: Nicht-Elementzeichen",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\notin",
+   "difficulty": "easy",
+   "choices": [
+    "\\notin",
+    "\\leq",
+    "\\times"
+   ],
+   "right": 0,
+   "why": "\\notin bedeutet „ist kein Element von“."
+  },
+  {
+   "title": "Symbol erkennen 5: Kleiner-gleich-Zeichen",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\leq",
+   "difficulty": "easy",
+   "choices": [
+    "\\geq",
+    "\\leq",
+    "\\parallel"
+   ],
+   "right": 1,
+   "why": "\\leq steht für „kleiner oder gleich“."
+  },
+  {
+   "title": "Symbol erkennen 6: Größer-gleich-Zeichen",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\geq",
+   "difficulty": "easy",
+   "choices": [
+    "\\times",
+    "\\Rightarrow",
+    "\\geq"
+   ],
+   "right": 2,
+   "why": "\\geq steht für „größer oder gleich“."
+  },
+  {
+   "title": "Symbol erkennen 7: Multiplikationskreuz",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\times",
+   "difficulty": "easy",
+   "choices": [
+    "\\times",
+    "\\parallel",
+    "\\Leftarrow"
+   ],
+   "right": 0,
+   "why": "\\times erzeugt das Multiplikationskreuz."
+  },
+  {
+   "title": "Symbol erkennen 8: Parallelzeichen",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\parallel",
+   "difficulty": "easy",
+   "choices": [
+    "\\Rightarrow",
+    "\\parallel",
+    "\\dot{x}"
+   ],
+   "right": 1,
+   "why": "\\parallel zeigt an, dass zwei Geraden parallel sind."
+  },
+  {
+   "title": "Symbol erkennen 9: Doppelpfeil nach rechts",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\Rightarrow",
+   "difficulty": "easy",
+   "choices": [
+    "\\Leftarrow",
+    "\\hat{x}",
+    "\\Rightarrow"
+   ],
+   "right": 2,
+   "why": "\\Rightarrow erzeugt einen Doppelpfeil nach rechts."
+  },
+  {
+   "title": "Symbol erkennen 10: Doppelpfeil nach links",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\Leftarrow",
+   "difficulty": "easy",
+   "choices": [
+    "\\Leftarrow",
+    "\\dot{x}",
+    "\\tilde{x}"
+   ],
+   "right": 0,
+   "why": "\\Leftarrow erzeugt einen Doppelpfeil nach links."
+  },
+  {
+   "title": "Symbol erkennen 11: Punkt über x",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\dot{x}",
+   "difficulty": "easy",
+   "choices": [
+    "\\hat{x}",
+    "\\dot{x}",
+    "\\Sigma"
+   ],
+   "right": 1,
+   "why": "\\dot{x} setzt einen Punkt über x."
+  },
+  {
+   "title": "Symbol erkennen 12: Dach über x",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\hat{x}",
+   "difficulty": "easy",
+   "choices": [
+    "\\tilde{x}",
+    "\\approx",
+    "\\hat{x}"
+   ],
+   "right": 2,
+   "why": "\\hat{x} setzt ein kleines Dach über x."
+  },
+  {
+   "title": "Symbol erkennen 13: Tilde über x",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\tilde{x}",
+   "difficulty": "easy",
+   "choices": [
+    "\\tilde{x}",
+    "\\Sigma",
+    "\\mathbb{R}"
+   ],
+   "right": 0,
+   "why": "\\tilde{x} setzt eine geschwungene Linie über x."
+  },
+  {
+   "title": "Symbol erkennen 14: großen griechischen Buchstaben Sigma",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\Sigma",
+   "difficulty": "easy",
+   "choices": [
+    "\\approx",
+    "\\Sigma",
+    "\\cdot"
+   ],
+   "right": 1,
+   "why": "\\Sigma ist ein griechischer Buchstabe, nicht das Summenzeichen."
+  },
+  {
+   "title": "Symbol erkennen 15: Ungefähr-gleich-Zeichen",
+   "prompt": "Welcher der drei Befehle erzeugt das gezeigte mathematische Zeichen?",
+   "render": "\\approx",
+   "difficulty": "easy",
+   "choices": [
+    "\\mathbb{R}",
+    "\\in",
+    "\\approx"
+   ],
+   "right": 2,
+   "why": "\\approx bedeutet „ungefähr gleich“."
+  },
+  {
+   "title": "Quadratwurzel verstehen 1",
+   "prompt": "Welche Eingabe erzeugt genau diese Wurzel?",
+   "render": "\\sqrt{x}",
+   "difficulty": "easy",
+   "choices": [
+    "\\sqrt{x}",
+    "\\frac{x}{2}",
+    "\\vec{x}"
+   ],
+   "right": 0,
+   "why": "Das Kommando \\sqrt{...} stellt den Inhalt der Klammern unter die Wurzel."
+  },
+  {
+   "title": "Quadratwurzel verstehen 2",
+   "prompt": "Welche Eingabe erzeugt genau diese Wurzel?",
+   "render": "\\sqrt{9}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{9}{2}",
+    "\\sqrt{9}",
+    "\\vec{9}"
+   ],
+   "right": 1,
+   "why": "Das Kommando \\sqrt{...} stellt den Inhalt der Klammern unter die Wurzel."
+  },
+  {
+   "title": "Quadratwurzel verstehen 3",
+   "prompt": "Welche Eingabe erzeugt genau diese Wurzel?",
+   "render": "\\sqrt{a}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{a}{2}",
+    "\\vec{a}",
+    "\\sqrt{a}"
+   ],
+   "right": 2,
+   "why": "Das Kommando \\sqrt{...} stellt den Inhalt der Klammern unter die Wurzel."
+  },
+  {
+   "title": "Quadratwurzel verstehen 4",
+   "prompt": "Welche Eingabe erzeugt genau diese Wurzel?",
+   "render": "\\sqrt{y}",
+   "difficulty": "easy",
+   "choices": [
+    "\\sqrt{y}",
+    "\\frac{y}{2}",
+    "\\vec{y}"
+   ],
+   "right": 0,
+   "why": "Das Kommando \\sqrt{...} stellt den Inhalt der Klammern unter die Wurzel."
+  },
+  {
+   "title": "Quadratwurzel verstehen 5",
+   "prompt": "Welche Eingabe erzeugt genau diese Wurzel?",
+   "render": "\\sqrt{16}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{16}{2}",
+    "\\sqrt{16}",
+    "\\vec{16}"
+   ],
+   "right": 1,
+   "why": "Das Kommando \\sqrt{...} stellt den Inhalt der Klammern unter die Wurzel."
+  },
+  {
+   "title": "Zähler und Nenner 1",
+   "prompt": "Welche Eingabe setzt 3 in den Zähler und 4 in den Nenner?",
+   "render": "\\frac{3}{4}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{3}{4}",
+    "\\frac{4}{3}",
+    "\\sqrt{3+4}"
+   ],
+   "right": 0,
+   "why": "Bei \\frac steht die erste Klammergruppe über dem Bruchstrich."
+  },
+  {
+   "title": "Zähler und Nenner 2",
+   "prompt": "Welche Eingabe setzt 5 in den Zähler und 8 in den Nenner?",
+   "render": "\\frac{5}{8}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{8}{5}",
+    "\\frac{5}{8}",
+    "\\sqrt{5+8}"
+   ],
+   "right": 1,
+   "why": "Bei \\frac steht die erste Klammergruppe über dem Bruchstrich."
+  },
+  {
+   "title": "Zähler und Nenner 3",
+   "prompt": "Welche Eingabe setzt a in den Zähler und b in den Nenner?",
+   "render": "\\frac{a}{b}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{b}{a}",
+    "\\sqrt{a+b}",
+    "\\frac{a}{b}"
+   ],
+   "right": 2,
+   "why": "Bei \\frac steht die erste Klammergruppe über dem Bruchstrich."
+  },
+  {
+   "title": "Zähler und Nenner 4",
+   "prompt": "Welche Eingabe setzt x in den Zähler und 7 in den Nenner?",
+   "render": "\\frac{x}{7}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{x}{7}",
+    "\\frac{7}{x}",
+    "\\sqrt{x+7}"
+   ],
+   "right": 0,
+   "why": "Bei \\frac steht die erste Klammergruppe über dem Bruchstrich."
+  },
+  {
+   "title": "Zähler und Nenner 5",
+   "prompt": "Welche Eingabe setzt 11 in den Zähler und 12 in den Nenner?",
+   "render": "\\frac{11}{12}",
+   "difficulty": "easy",
+   "choices": [
+    "\\frac{12}{11}",
+    "\\frac{11}{12}",
+    "\\sqrt{11+12}"
+   ],
+   "right": 1,
+   "why": "Bei \\frac steht die erste Klammergruppe über dem Bruchstrich."
+  },
+  {
+   "title": "Gruppierung verstehen 1",
+   "prompt": "Welche Eingabe stellt beide Ziffern gemeinsam hoch oder tief?",
+   "render": "x^{23}",
+   "difficulty": "easy",
+   "choices": [
+    "x^{23}",
+    "x^23",
+    "x_{23}"
+   ],
+   "right": 0,
+   "why": "Bei mehreren Zeichen im Index bzw. Exponenten sind geschweifte Klammern notwendig."
+  },
+  {
+   "title": "Gruppierung verstehen 2",
+   "prompt": "Welche Eingabe stellt beide Ziffern gemeinsam hoch oder tief?",
+   "render": "a_{13}",
+   "difficulty": "easy",
+   "choices": [
+    "a_13",
+    "a_{13}",
+    "a^{13}"
+   ],
+   "right": 1,
+   "why": "Bei mehreren Zeichen im Index bzw. Exponenten sind geschweifte Klammern notwendig."
+  },
+  {
+   "title": "Gruppierung verstehen 3",
+   "prompt": "Welche Eingabe stellt beide Ziffern gemeinsam hoch oder tief?",
+   "render": "F^{42}",
+   "difficulty": "easy",
+   "choices": [
+    "F^42",
+    "F_{42}",
+    "F^{42}"
+   ],
+   "right": 2,
+   "why": "Bei mehreren Zeichen im Index bzw. Exponenten sind geschweifte Klammern notwendig."
+  },
+  {
+   "title": "Gruppierung verstehen 4",
+   "prompt": "Welche Eingabe stellt beide Ziffern gemeinsam hoch oder tief?",
+   "render": "y_{27}",
+   "difficulty": "easy",
+   "choices": [
+    "y_{27}",
+    "y_27",
+    "y^{27}"
+   ],
+   "right": 0,
+   "why": "Bei mehreren Zeichen im Index bzw. Exponenten sind geschweifte Klammern notwendig."
+  },
+  {
+   "title": "Index / Exponent korrekt lesen 1",
+   "prompt": "Welche Eingabe zeigt den Index und den Exponenten in der gewünschten Position?",
+   "render": "v_{max}^{2}",
+   "difficulty": "medium",
+   "choices": [
+    "v_{max}^{2}",
+    "v_max^2",
+    "v^{max}_{2}"
+   ],
+   "right": 0,
+   "why": "In {..} steht, was zu Index bzw. Exponent gehört. _ und ^ haben unterschiedliche Aufgaben."
+  },
+  {
+   "title": "Index / Exponent korrekt lesen 2",
+   "prompt": "Welche Eingabe zeigt den Index und den Exponenten in der gewünschten Position?",
+   "render": "a_{ij}^{3}",
+   "difficulty": "medium",
+   "choices": [
+    "a_ij^3",
+    "a_{ij}^{3}",
+    "a^{ij}_{3}"
+   ],
+   "right": 1,
+   "why": "In {..} steht, was zu Index bzw. Exponent gehört. _ und ^ haben unterschiedliche Aufgaben."
+  },
+  {
+   "title": "Index / Exponent korrekt lesen 3",
+   "prompt": "Welche Eingabe zeigt den Index und den Exponenten in der gewünschten Position?",
+   "render": "F_{12}^{n}",
+   "difficulty": "medium",
+   "choices": [
+    "F_12^n",
+    "F^{12}_{n}",
+    "F_{12}^{n}"
+   ],
+   "right": 2,
+   "why": "In {..} steht, was zu Index bzw. Exponent gehört. _ und ^ haben unterschiedliche Aufgaben."
+  },
+  {
+   "title": "Index / Exponent korrekt lesen 4",
+   "prompt": "Welche Eingabe zeigt den Index und den Exponenten in der gewünschten Position?",
+   "render": "x_{n+1}^{2}",
+   "difficulty": "medium",
+   "choices": [
+    "x_{n+1}^{2}",
+    "x_n+1^2",
+    "x^{n+1}_{2}"
+   ],
+   "right": 0,
+   "why": "In {..} steht, was zu Index bzw. Exponent gehört. _ und ^ haben unterschiedliche Aufgaben."
+  },
+  {
+   "title": "Index / Exponent korrekt lesen 5",
+   "prompt": "Welche Eingabe zeigt den Index und den Exponenten in der gewünschten Position?",
+   "render": "T_{in}^{4}",
+   "difficulty": "medium",
+   "choices": [
+    "T_in^4",
+    "T_{in}^{4}",
+    "T^{in}_{4}"
+   ],
+   "right": 1,
+   "why": "In {..} steht, was zu Index bzw. Exponent gehört. _ und ^ haben unterschiedliche Aufgaben."
+  },
+  {
+   "title": "Index / Exponent korrekt lesen 6",
+   "prompt": "Welche Eingabe zeigt den Index und den Exponenten in der gewünschten Position?",
+   "render": "A_{0}^{12}",
+   "difficulty": "medium",
+   "choices": [
+    "A_0^12",
+    "A^{0}_{12}",
+    "A_{0}^{12}"
+   ],
+   "right": 2,
+   "why": "In {..} steht, was zu Index bzw. Exponent gehört. _ und ^ haben unterschiedliche Aufgaben."
+  },
+  {
+   "title": "Bruch-Argumente verstehen 1",
+   "prompt": "Welche Eingabe enthält den gesamten Zähler und den gesamten Nenner?",
+   "render": "\\frac{a+b}{c}",
+   "difficulty": "medium",
+   "choices": [
+    "\\frac{a+b}{c}",
+    "\\frac{c}{a+b}",
+    "\\frac{a+b+c}{2}"
+   ],
+   "right": 0,
+   "why": "Das erste Argument von \\frac ist der Zähler, das zweite der Nenner."
+  },
+  {
+   "title": "Bruch-Argumente verstehen 2",
+   "prompt": "Welche Eingabe enthält den gesamten Zähler und den gesamten Nenner?",
+   "render": "\\frac{x^2+1}{x+1}",
+   "difficulty": "medium",
+   "choices": [
+    "\\frac{x+1}{x^2+1}",
+    "\\frac{x^2+1}{x+1}",
+    "\\frac{x^2+1+x+1}{2}"
+   ],
+   "right": 1,
+   "why": "Das erste Argument von \\frac ist der Zähler, das zweite der Nenner."
+  },
+  {
+   "title": "Bruch-Argumente verstehen 3",
+   "prompt": "Welche Eingabe enthält den gesamten Zähler und den gesamten Nenner?",
+   "render": "\\frac{2x-3}{5}",
+   "difficulty": "medium",
+   "choices": [
+    "\\frac{5}{2x-3}",
+    "\\frac{2x-3+5}{2}",
+    "\\frac{2x-3}{5}"
+   ],
+   "right": 2,
+   "why": "Das erste Argument von \\frac ist der Zähler, das zweite der Nenner."
+  },
+  {
+   "title": "Bruch-Argumente verstehen 4",
+   "prompt": "Welche Eingabe enthält den gesamten Zähler und den gesamten Nenner?",
+   "render": "\\frac{p+q}{r+s}",
+   "difficulty": "medium",
+   "choices": [
+    "\\frac{p+q}{r+s}",
+    "\\frac{r+s}{p+q}",
+    "\\frac{p+q+r+s}{2}"
+   ],
+   "right": 0,
+   "why": "Das erste Argument von \\frac ist der Zähler, das zweite der Nenner."
+  },
+  {
+   "title": "Bruch-Argumente verstehen 5",
+   "prompt": "Welche Eingabe enthält den gesamten Zähler und den gesamten Nenner?",
+   "render": "\\frac{m^2}{n^2+1}",
+   "difficulty": "medium",
+   "choices": [
+    "\\frac{n^2+1}{m^2}",
+    "\\frac{m^2}{n^2+1}",
+    "\\frac{m^2+n^2+1}{2}"
+   ],
+   "right": 1,
+   "why": "Das erste Argument von \\frac ist der Zähler, das zweite der Nenner."
+  },
+  {
+   "title": "Bruch-Argumente verstehen 6",
+   "prompt": "Welche Eingabe enthält den gesamten Zähler und den gesamten Nenner?",
+   "render": "\\frac{a-1}{b+1}",
+   "difficulty": "medium",
+   "choices": [
+    "\\frac{b+1}{a-1}",
+    "\\frac{a-1+b+1}{2}",
+    "\\frac{a-1}{b+1}"
+   ],
+   "right": 2,
+   "why": "Das erste Argument von \\frac ist der Zähler, das zweite der Nenner."
+  },
+  {
+   "title": "Geltungsbereich einer Wurzel 1",
+   "prompt": "Welcher Code legt den ganzen Ausdruck unter den Wurzelstrich?",
+   "render": "\\sqrt{x^2+y^2}",
+   "difficulty": "medium",
+   "choices": [
+    "\\sqrt{x^2+y^2}",
+    "\\sqrt x^2+y^2",
+    "\\frac{x^2+y^2}{2}"
+   ],
+   "right": 0,
+   "why": "Der vollständige Radikand steht in der Klammergruppe direkt hinter \\sqrt."
+  },
+  {
+   "title": "Geltungsbereich einer Wurzel 2",
+   "prompt": "Welcher Code legt den ganzen Ausdruck unter den Wurzelstrich?",
+   "render": "\\sqrt{a+b}",
+   "difficulty": "medium",
+   "choices": [
+    "\\sqrt a+b",
+    "\\sqrt{a+b}",
+    "\\frac{a+b}{2}"
+   ],
+   "right": 1,
+   "why": "Der vollständige Radikand steht in der Klammergruppe direkt hinter \\sqrt."
+  },
+  {
+   "title": "Geltungsbereich einer Wurzel 3",
+   "prompt": "Welcher Code legt den ganzen Ausdruck unter den Wurzelstrich?",
+   "render": "\\sqrt{2x+3}",
+   "difficulty": "medium",
+   "choices": [
+    "\\sqrt 2x+3",
+    "\\frac{2x+3}{2}",
+    "\\sqrt{2x+3}"
+   ],
+   "right": 2,
+   "why": "Der vollständige Radikand steht in der Klammergruppe direkt hinter \\sqrt."
+  },
+  {
+   "title": "Geltungsbereich einer Wurzel 4",
+   "prompt": "Welcher Code legt den ganzen Ausdruck unter den Wurzelstrich?",
+   "render": "\\sqrt{\\frac{1}{2}}",
+   "difficulty": "medium",
+   "choices": [
+    "\\sqrt{\\frac{1}{2}}",
+    "\\sqrt \\frac{1}{2}",
+    "\\frac{\\frac{1}{2}}{2}"
+   ],
+   "right": 0,
+   "why": "Der vollständige Radikand steht in der Klammergruppe direkt hinter \\sqrt."
+  },
+  {
+   "title": "Geltungsbereich einer Wurzel 5",
+   "prompt": "Welcher Code legt den ganzen Ausdruck unter den Wurzelstrich?",
+   "render": "\\sqrt{x_{12}}",
+   "difficulty": "medium",
+   "choices": [
+    "\\sqrt x_{12}",
+    "\\sqrt{x_{12}}",
+    "\\frac{x_{12}}{2}"
+   ],
+   "right": 1,
+   "why": "Der vollständige Radikand steht in der Klammergruppe direkt hinter \\sqrt."
+  },
+  {
+   "title": "Geltungsbereich einer Wurzel 6",
+   "prompt": "Welcher Code legt den ganzen Ausdruck unter den Wurzelstrich?",
+   "render": "\\sqrt{m^2+n^2}",
+   "difficulty": "medium",
+   "choices": [
+    "\\sqrt m^2+n^2",
+    "\\frac{m^2+n^2}{2}",
+    "\\sqrt{m^2+n^2}"
+   ],
+   "right": 2,
+   "why": "Der vollständige Radikand steht in der Klammergruppe direkt hinter \\sqrt."
+  },
+  {
+   "title": "Mathematische Beziehung 1",
+   "prompt": "Welche Eingabe entspricht der angezeigten Beziehung?",
+   "render": "a\\in\\mathbb{R}",
+   "difficulty": "medium",
+   "choices": [
+    "a\\in\\mathbb{R}",
+    "b\\notin\\mathbb{R}",
+    "y\\geq 2"
+   ],
+   "right": 0,
+   "why": "Die Namen von Vergleichs-, Mengen- und Pfeiloperatoren müssen exakt passen."
+  },
+  {
+   "title": "Mathematische Beziehung 2",
+   "prompt": "Welche Eingabe entspricht der angezeigten Beziehung?",
+   "render": "b\\notin\\mathbb{R}",
+   "difficulty": "medium",
+   "choices": [
+    "x\\leq 5",
+    "b\\notin\\mathbb{R}",
+    "g\\parallel h"
+   ],
+   "right": 1,
+   "why": "Die Namen von Vergleichs-, Mengen- und Pfeiloperatoren müssen exakt passen."
+  },
+  {
+   "title": "Mathematische Beziehung 3",
+   "prompt": "Welche Eingabe entspricht der angezeigten Beziehung?",
+   "render": "x\\leq 5",
+   "difficulty": "medium",
+   "choices": [
+    "y\\geq 2",
+    "x\\Rightarrow y",
+    "x\\leq 5"
+   ],
+   "right": 2,
+   "why": "Die Namen von Vergleichs-, Mengen- und Pfeiloperatoren müssen exakt passen."
+  },
+  {
+   "title": "Mathematische Beziehung 4",
+   "prompt": "Welche Eingabe entspricht der angezeigten Beziehung?",
+   "render": "y\\geq 2",
+   "difficulty": "medium",
+   "choices": [
+    "y\\geq 2",
+    "g\\parallel h",
+    "a\\in\\mathbb{R}"
+   ],
+   "right": 0,
+   "why": "Die Namen von Vergleichs-, Mengen- und Pfeiloperatoren müssen exakt passen."
+  },
+  {
+   "title": "Mathematische Beziehung 5",
+   "prompt": "Welche Eingabe entspricht der angezeigten Beziehung?",
+   "render": "g\\parallel h",
+   "difficulty": "medium",
+   "choices": [
+    "x\\Rightarrow y",
+    "g\\parallel h",
+    "b\\notin\\mathbb{R}"
+   ],
+   "right": 1,
+   "why": "Die Namen von Vergleichs-, Mengen- und Pfeiloperatoren müssen exakt passen."
+  },
+  {
+   "title": "Mathematische Beziehung 6",
+   "prompt": "Welche Eingabe entspricht der angezeigten Beziehung?",
+   "render": "x\\Rightarrow y",
+   "difficulty": "medium",
+   "choices": [
+    "a\\in\\mathbb{R}",
+    "x\\leq 5",
+    "x\\Rightarrow y"
+   ],
+   "right": 2,
+   "why": "Die Namen von Vergleichs-, Mengen- und Pfeiloperatoren müssen exakt passen."
+  },
+  {
+   "title": "Beschriftung oder Akzent 1",
+   "prompt": "Welche Eingabe erzeugt die beiden Markierungen genau wie gezeigt?",
+   "render": "\\underbrace{a+b}_{c}",
+   "difficulty": "medium",
+   "choices": [
+    "\\underbrace{a+b}_{c}",
+    "\\overbrace{a+b}_{c}",
+    "\\underbrce{a+b}_{c}"
+   ],
+   "right": 0,
+   "why": "Der Befehl bestimmt, ob ein Akzent, ein Balken oder eine Beschriftung dargestellt wird."
+  },
+  {
+   "title": "Beschriftung oder Akzent 2",
+   "prompt": "Welche Eingabe erzeugt die beiden Markierungen genau wie gezeigt?",
+   "render": "\\overbrace{x+y}^{z}",
+   "difficulty": "medium",
+   "choices": [
+    "\\underbrace{x+y}^{z}",
+    "\\overbrace{x+y}^{z}",
+    "\\overbrce{x+y}^{z}"
+   ],
+   "right": 1,
+   "why": "Der Befehl bestimmt, ob ein Akzent, ein Balken oder eine Beschriftung dargestellt wird."
+  },
+  {
+   "title": "Beschriftung oder Akzent 3",
+   "prompt": "Welche Eingabe erzeugt die beiden Markierungen genau wie gezeigt?",
+   "render": "\\overset{a}{b}",
+   "difficulty": "medium",
+   "choices": [
+    "\\underset{a}{b}",
+    "\\ovrset{a}{b}",
+    "\\overset{a}{b}"
+   ],
+   "right": 2,
+   "why": "Der Befehl bestimmt, ob ein Akzent, ein Balken oder eine Beschriftung dargestellt wird."
+  },
+  {
+   "title": "Beschriftung oder Akzent 4",
+   "prompt": "Welche Eingabe erzeugt die beiden Markierungen genau wie gezeigt?",
+   "render": "\\underset{1}{x}",
+   "difficulty": "medium",
+   "choices": [
+    "\\underset{1}{x}",
+    "\\overset{1}{x}",
+    "\\undersat{1}{x}"
+   ],
+   "right": 0,
+   "why": "Der Befehl bestimmt, ob ein Akzent, ein Balken oder eine Beschriftung dargestellt wird."
+  },
+  {
+   "title": "Beschriftung oder Akzent 5",
+   "prompt": "Welche Eingabe erzeugt die beiden Markierungen genau wie gezeigt?",
+   "render": "\\dot{x}+\\vec{F}",
+   "difficulty": "medium",
+   "choices": [
+    "\\hat{x}+\\vec{F}",
+    "\\dot{x}+\\vec{F}",
+    "\\dot{x}+\\bar{F}"
+   ],
+   "right": 1,
+   "why": "Der Befehl bestimmt, ob ein Akzent, ein Balken oder eine Beschriftung dargestellt wird."
+  },
+  {
+   "title": "Beschriftung oder Akzent 6",
+   "prompt": "Welche Eingabe erzeugt die beiden Markierungen genau wie gezeigt?",
+   "render": "\\hat{a}+\\tilde{b}",
+   "difficulty": "medium",
+   "choices": [
+    "\\bar{a}+\\tilde{b}",
+    "\\hat{a}+\\vec{b}",
+    "\\hat{a}+\\tilde{b}"
+   ],
+   "right": 2,
+   "why": "Der Befehl bestimmt, ob ein Akzent, ein Balken oder eine Beschriftung dargestellt wird."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 1",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}3x+2 &=14 \\\\ 3x &=12 \\\\ x &=4\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n3x+2 &=14 \\\\\n3x &=12 \\\\\nx &=4\n\\end{align*}",
+    "\\begin{align*}\n3x+2 = 14 \\\\\n3x = 12 \\\\\nx = 4\n\\end{align*}",
+    "\\begin{align*}\n3x+2 =\\,14 \\\\\n3x =\\,12 \\\\\nx =\\,4\n\\end{align*}"
+   ],
+   "right": 0,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 2",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}2x-6 &=10 \\\\ 2x &=16 \\\\ x &=8\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n2x-6 = 10 \\\\\n2x = 16 \\\\\nx = 8\n\\end{align*}",
+    "\\begin{align*}\n2x-6 &=10 \\\\\n2x &=16 \\\\\nx &=8\n\\end{align*}",
+    "\\begin{align*}\n2x-6 =\\,10 \\\\\n2x =\\,16 \\\\\nx =\\,8\n\\end{align*}"
+   ],
+   "right": 1,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 3",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}5x+1 &=16 \\\\ 5x &=15 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n5x+1 = 16 \\\\\n5x = 15 \\\\\nx = 3\n\\end{align*}",
+    "\\begin{align*}\n5x+1 =\\,16 \\\\\n5x =\\,15 \\\\\nx =\\,3\n\\end{align*}",
+    "\\begin{align*}\n5x+1 &=16 \\\\\n5x &=15 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "right": 2,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 4",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}4x-8 &=0 \\\\ 4x &=8 \\\\ x &=2\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n4x-8 &=0 \\\\\n4x &=8 \\\\\nx &=2\n\\end{align*}",
+    "\\begin{align*}\n4x-8 = 0 \\\\\n4x = 8 \\\\\nx = 2\n\\end{align*}",
+    "\\begin{align*}\n4x-8 =\\,0 \\\\\n4x =\\,8 \\\\\nx =\\,2\n\\end{align*}"
+   ],
+   "right": 0,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 5",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}7x+3 &=24 \\\\ 7x &=21 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n7x+3 = 24 \\\\\n7x = 21 \\\\\nx = 3\n\\end{align*}",
+    "\\begin{align*}\n7x+3 &=24 \\\\\n7x &=21 \\\\\nx &=3\n\\end{align*}",
+    "\\begin{align*}\n7x+3 =\\,24 \\\\\n7x =\\,21 \\\\\nx =\\,3\n\\end{align*}"
+   ],
+   "right": 1,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 6",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}6x-4 &=14 \\\\ 6x &=18 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n6x-4 = 14 \\\\\n6x = 18 \\\\\nx = 3\n\\end{align*}",
+    "\\begin{align*}\n6x-4 =\\,14 \\\\\n6x =\\,18 \\\\\nx =\\,3\n\\end{align*}",
+    "\\begin{align*}\n6x-4 &=14 \\\\\n6x &=18 \\\\\nx &=3\n\\end{align*}"
+   ],
+   "right": 2,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 7",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}9x+2 &=47 \\\\ 9x &=45 \\\\ x &=5\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n9x+2 &=47 \\\\\n9x &=45 \\\\\nx &=5\n\\end{align*}",
+    "\\begin{align*}\n9x+2 = 47 \\\\\n9x = 45 \\\\\nx = 5\n\\end{align*}",
+    "\\begin{align*}\n9x+2 =\\,47 \\\\\n9x =\\,45 \\\\\nx =\\,5\n\\end{align*}"
+   ],
+   "right": 0,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 8",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}8x-7 &=17 \\\\ 8x &=24 \\\\ x &=3\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n8x-7 = 17 \\\\\n8x = 24 \\\\\nx = 3\n\\end{align*}",
+    "\\begin{align*}\n8x-7 &=17 \\\\\n8x &=24 \\\\\nx &=3\n\\end{align*}",
+    "\\begin{align*}\n8x-7 =\\,17 \\\\\n8x =\\,24 \\\\\nx =\\,3\n\\end{align*}"
+   ],
+   "right": 1,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Gleichungen: Ausrichtung 9",
+   "prompt": "Welcher Code richtet bei allen drei Zeilen das Gleichheitszeichen korrekt aus?",
+   "render": "\\begin{aligned}5x+2 &=22 \\\\ 5x &=20 \\\\ x &=4\\end{aligned}",
+   "difficulty": "hard",
+   "choices": [
+    "\\begin{align*}\n5x+2 = 22 \\\\\n5x = 20 \\\\\nx = 4\n\\end{align*}",
+    "\\begin{align*}\n5x+2 =\\,22 \\\\\n5x =\\,20 \\\\\nx =\\,4\n\\end{align*}",
+    "\\begin{align*}\n5x+2 &=22 \\\\\n5x &=20 \\\\\nx &=4\n\\end{align*}"
+   ],
+   "right": 2,
+   "why": "In der align*-Umgebung kennzeichnet & die vertikale Ausrichtungsstelle."
+  },
+  {
+   "title": "Verschachtelter Bruch verstehen 1",
+   "prompt": "Welche Variante bewahrt die Brüche und die Reihenfolge von Zähler und Nenner?",
+   "render": "\\frac{1}{1+\\frac{1}{x}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\frac{1}{1+\\frac{1}{x}}",
+    "\\sqrt{1}{1+\\frac{1}{x}}",
+    "\\frc{1}{1+\\frac{1}{x}}"
+   ],
+   "right": 0,
+   "why": "In einem verschachtelten Bruch müssen auch die inneren Bruchbefehle vollständig sein."
+  },
+  {
+   "title": "Verschachtelter Bruch verstehen 2",
+   "prompt": "Welche Variante bewahrt die Brüche und die Reihenfolge von Zähler und Nenner?",
+   "render": "\\frac{\\frac{a}{b}}{c}",
+   "difficulty": "hard",
+   "choices": [
+    "\\sqrt{\\frac{a}{b}}{c}",
+    "\\frac{\\frac{a}{b}}{c}",
+    "\\frc{\\frac{a}{b}}{c}"
+   ],
+   "right": 1,
+   "why": "In einem verschachtelten Bruch müssen auch die inneren Bruchbefehle vollständig sein."
+  },
+  {
+   "title": "Verschachtelter Bruch verstehen 3",
+   "prompt": "Welche Variante bewahrt die Brüche und die Reihenfolge von Zähler und Nenner?",
+   "render": "\\frac{a+b}{\\frac{c}{d}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\sqrt{a+b}{\\frac{c}{d}}",
+    "\\frc{a+b}{\\frac{c}{d}}",
+    "\\frac{a+b}{\\frac{c}{d}}"
+   ],
+   "right": 2,
+   "why": "In einem verschachtelten Bruch müssen auch die inneren Bruchbefehle vollständig sein."
+  },
+  {
+   "title": "Verschachtelter Bruch verstehen 4",
+   "prompt": "Welche Variante bewahrt die Brüche und die Reihenfolge von Zähler und Nenner?",
+   "render": "\\frac{1+\\frac{1}{2}}{3}",
+   "difficulty": "hard",
+   "choices": [
+    "\\frac{1+\\frac{1}{2}}{3}",
+    "\\sqrt{1+\\frac{1}{2}}{3}",
+    "\\frc{1+\\frac{1}{2}}{3}"
+   ],
+   "right": 0,
+   "why": "In einem verschachtelten Bruch müssen auch die inneren Bruchbefehle vollständig sein."
+  },
+  {
+   "title": "Verschachtelter Bruch verstehen 5",
+   "prompt": "Welche Variante bewahrt die Brüche und die Reihenfolge von Zähler und Nenner?",
+   "render": "\\frac{\\sqrt{x}}{\\frac{a}{b}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\sqrt{\\sqrt{x}}{\\frac{a}{b}}",
+    "\\frac{\\sqrt{x}}{\\frac{a}{b}}",
+    "\\frc{\\sqrt{x}}{\\frac{a}{b}}"
+   ],
+   "right": 1,
+   "why": "In einem verschachtelten Bruch müssen auch die inneren Bruchbefehle vollständig sein."
+  },
+  {
+   "title": "Verschachtelter Bruch verstehen 6",
+   "prompt": "Welche Variante bewahrt die Brüche und die Reihenfolge von Zähler und Nenner?",
+   "render": "\\frac{\\frac{a+b}{c}}{d+1}",
+   "difficulty": "hard",
+   "choices": [
+    "\\sqrt{\\frac{a+b}{c}}{d+1}",
+    "\\frc{\\frac{a+b}{c}}{d+1}",
+    "\\frac{\\frac{a+b}{c}}{d+1}"
+   ],
+   "right": 2,
+   "why": "In einem verschachtelten Bruch müssen auch die inneren Bruchbefehle vollständig sein."
+  },
+  {
+   "title": "Verschachtelter Bruch verstehen 7",
+   "prompt": "Welche Variante bewahrt die Brüche und die Reihenfolge von Zähler und Nenner?",
+   "render": "\\frac{2}{\\frac{3}{4}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\frac{2}{\\frac{3}{4}}",
+    "\\sqrt{2}{\\frac{3}{4}}",
+    "\\frc{2}{\\frac{3}{4}}"
+   ],
+   "right": 0,
+   "why": "In einem verschachtelten Bruch müssen auch die inneren Bruchbefehle vollständig sein."
+  },
+  {
+   "title": "Markierungen durchschauen 1",
+   "prompt": "Welcher Code setzt die Beschriftung und Markierung genau an die richtige Stelle?",
+   "render": "\\underbrace{x+y+z}_{\\text{Summe}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\underbrace{x+y+z}_{\\text{Summe}}",
+    "\\underbrac{x+y+z}_{\\text{Summe}}",
+    "\\overbrace{x+y+z}_{\\text{Summe}}"
+   ],
+   "right": 0,
+   "why": "underbrace/overbrace setzen Klammern, overset/underset positionieren eine zusätzliche Beschriftung."
+  },
+  {
+   "title": "Markierungen durchschauen 2",
+   "prompt": "Welcher Code setzt die Beschriftung und Markierung genau an die richtige Stelle?",
+   "render": "\\overbrace{a+b+c}^{3\\text{ Terme}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\overbrac{a+b+c}^{3\\text{ Terme}}",
+    "\\overbrace{a+b+c}^{3\\text{ Terme}}",
+    "\\underbrace{a+b+c}^{3\\text{ Terme}}"
+   ],
+   "right": 1,
+   "why": "underbrace/overbrace setzen Klammern, overset/underset positionieren eine zusätzliche Beschriftung."
+  },
+  {
+   "title": "Markierungen durchschauen 3",
+   "prompt": "Welcher Code setzt die Beschriftung und Markierung genau an die richtige Stelle?",
+   "render": "\\underset{x\\in\\mathbb{R}}{\\Rightarrow}",
+   "difficulty": "hard",
+   "choices": [
+    "\\underse{x\\in\\mathbb{R}}{\\Rightarrow}",
+    "\\overset{x\\in\\mathbb{R}}{\\Rightarrow}",
+    "\\underset{x\\in\\mathbb{R}}{\\Rightarrow}"
+   ],
+   "right": 2,
+   "why": "underbrace/overbrace setzen Klammern, overset/underset positionieren eine zusätzliche Beschriftung."
+  },
+  {
+   "title": "Markierungen durchschauen 4",
+   "prompt": "Welcher Code setzt die Beschriftung und Markierung genau an die richtige Stelle?",
+   "render": "\\overset{!}{=}",
+   "difficulty": "hard",
+   "choices": [
+    "\\overset{!}{=}",
+    "\\overse{!}{=}",
+    "\\underset{!}{=}"
+   ],
+   "right": 0,
+   "why": "underbrace/overbrace setzen Klammern, overset/underset positionieren eine zusätzliche Beschriftung."
+  },
+  {
+   "title": "Markierungen durchschauen 5",
+   "prompt": "Welcher Code setzt die Beschriftung und Markierung genau an die richtige Stelle?",
+   "render": "\\underbrace{\\frac{a}{b}}_{c}",
+   "difficulty": "hard",
+   "choices": [
+    "\\underbrac{\\frac{a}{b}}_{c}",
+    "\\underbrace{\\frac{a}{b}}_{c}",
+    "\\overbrace{\\frac{a}{b}}_{c}"
+   ],
+   "right": 1,
+   "why": "underbrace/overbrace setzen Klammern, overset/underset positionieren eine zusätzliche Beschriftung."
+  },
+  {
+   "title": "Markierungen durchschauen 6",
+   "prompt": "Welcher Code setzt die Beschriftung und Markierung genau an die richtige Stelle?",
+   "render": "\\overbrace{\\sqrt{x^2+y^2}}^{r}",
+   "difficulty": "hard",
+   "choices": [
+    "\\overbrac{\\sqrt{x^2+y^2}}^{r}",
+    "\\underbrace{\\sqrt{x^2+y^2}}^{r}",
+    "\\overbrace{\\sqrt{x^2+y^2}}^{r}"
+   ],
+   "right": 2,
+   "why": "underbrace/overbrace setzen Klammern, overset/underset positionieren eine zusätzliche Beschriftung."
+  },
+  {
+   "title": "Markierungen durchschauen 7",
+   "prompt": "Welcher Code setzt die Beschriftung und Markierung genau an die richtige Stelle?",
+   "render": "\\overset{n}{x}",
+   "difficulty": "hard",
+   "choices": [
+    "\\overset{n}{x}",
+    "\\overse{n}{x}",
+    "\\underset{n}{x}"
+   ],
+   "right": 0,
+   "why": "underbrace/overbrace setzen Klammern, overset/underset positionieren eine zusätzliche Beschriftung."
+  },
+  {
+   "title": "Vergleich, Menge oder Operator 1",
+   "prompt": "Achte genau auf jedes Symbol. Welche Variante entspricht der Zielanzeige?",
+   "render": "a\\in\\mathbb{R}",
+   "difficulty": "hard",
+   "choices": [
+    "a\\in\\mathbb{R}",
+    "a\\in\\mathbb{N}",
+    "a\\notin\\mathbb{R}"
+   ],
+   "right": 0,
+   "why": "Die Richtung eines Vergleichs oder die Negation eines Elementsymbols verändert die Aussage."
+  },
+  {
+   "title": "Vergleich, Menge oder Operator 2",
+   "prompt": "Achte genau auf jedes Symbol. Welche Variante entspricht der Zielanzeige?",
+   "render": "b\\notin\\mathbb{R}",
+   "difficulty": "hard",
+   "choices": [
+    "b\\notin\\mathbb{N}",
+    "b\\notin\\mathbb{R}",
+    "y\\geq 2"
+   ],
+   "right": 1,
+   "why": "Die Richtung eines Vergleichs oder die Negation eines Elementsymbols verändert die Aussage."
+  },
+  {
+   "title": "Vergleich, Menge oder Operator 3",
+   "prompt": "Achte genau auf jedes Symbol. Welche Variante entspricht der Zielanzeige?",
+   "render": "x\\leq 5",
+   "difficulty": "hard",
+   "choices": [
+    "x\\geq 5",
+    "g\\parallel h",
+    "x\\leq 5"
+   ],
+   "right": 2,
+   "why": "Die Richtung eines Vergleichs oder die Negation eines Elementsymbols verändert die Aussage."
+  },
+  {
+   "title": "Vergleich, Menge oder Operator 4",
+   "prompt": "Achte genau auf jedes Symbol. Welche Variante entspricht der Zielanzeige?",
+   "render": "y\\geq 2",
+   "difficulty": "hard",
+   "choices": [
+    "y\\geq 2",
+    "g\\parallel h",
+    "x\\Rightarrow y"
+   ],
+   "right": 0,
+   "why": "Die Richtung eines Vergleichs oder die Negation eines Elementsymbols verändert die Aussage."
+  },
+  {
+   "title": "Vergleich, Menge oder Operator 5",
+   "prompt": "Achte genau auf jedes Symbol. Welche Variante entspricht der Zielanzeige?",
+   "render": "g\\parallel h",
+   "difficulty": "hard",
+   "choices": [
+    "x\\Rightarrow y",
+    "g\\parallel h",
+    "g\\perp h"
+   ],
+   "right": 1,
+   "why": "Die Richtung eines Vergleichs oder die Negation eines Elementsymbols verändert die Aussage."
+  },
+  {
+   "title": "Kombinierte Formel richtig lesen 1",
+   "prompt": "Welche Eingabe enthält alle Hoch-/Tiefstellungen und Befehle korrekt?",
+   "render": "\\vec{F}_{12}^{2}",
+   "difficulty": "hard",
+   "choices": [
+    "\\vec{F}_{12}^{2}",
+    "\\vec{F_12}^{2}",
+    "\\bar{F}_{12}^{2}"
+   ],
+   "right": 0,
+   "why": "Für die Zielanzeige müssen die Befehle und die jeweiligen Klammergruppen zusammenpassen."
+  },
+  {
+   "title": "Kombinierte Formel richtig lesen 2",
+   "prompt": "Welche Eingabe enthält alle Hoch-/Tiefstellungen und Befehle korrekt?",
+   "render": "\\hat{x}_{n+1}+\\tilde{y}_{0}",
+   "difficulty": "hard",
+   "choices": [
+    "\\hat{x_n+1}+\\tilde{y}_0}",
+    "\\hat{x}_{n+1}+\\tilde{y}_{0}",
+    "\\tilde{x}_{n+1}+\\tilde{y}_{0}"
+   ],
+   "right": 1,
+   "why": "Für die Zielanzeige müssen die Befehle und die jeweiligen Klammergruppen zusammenpassen."
+  },
+  {
+   "title": "Kombinierte Formel richtig lesen 3",
+   "prompt": "Welche Eingabe enthält alle Hoch-/Tiefstellungen und Befehle korrekt?",
+   "render": "\\frac{\\dot{x}^{2}}{\\sqrt{a+b}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\frc{\\dot{x}^{2}}{\\sqrt{a+b}}",
+    "\\frac{\\dot{x}^2}}{\\sqrt{a+b}}",
+    "\\frac{\\dot{x}^{2}}{\\sqrt{a+b}}"
+   ],
+   "right": 2,
+   "why": "Für die Zielanzeige müssen die Befehle und die jeweiligen Klammergruppen zusammenpassen."
+  },
+  {
+   "title": "Kombinierte Formel richtig lesen 4",
+   "prompt": "Welche Eingabe enthält alle Hoch-/Tiefstellungen und Befehle korrekt?",
+   "render": "\\left(\\frac{x_{12}^{2}}{\\frac{1}{2}}\\right)",
+   "difficulty": "hard",
+   "choices": [
+    "\\left(\\frac{x_{12}^{2}}{\\frac{1}{2}}\\right)",
+    "\\left(\\frc{x_{12}^{2}}{\\frac{1}{2}}\\right)",
+    "\\left(\\frac{x_{12}^2}}{\\frac{1}{2}}\\right)"
+   ],
+   "right": 0,
+   "why": "Für die Zielanzeige müssen die Befehle und die jeweiligen Klammergruppen zusammenpassen."
+  },
+  {
+   "title": "Kombinierte Formel richtig lesen 5",
+   "prompt": "Welche Eingabe enthält alle Hoch-/Tiefstellungen und Befehle korrekt?",
+   "render": "\\underbrace{x_{1}+x_{2}}_{\\text{zwei Terme}}",
+   "difficulty": "hard",
+   "choices": [
+    "\\underbrace{x_1+x_2}}_\\text{zwei Terme}}",
+    "\\underbrace{x_{1}+x_{2}}_{\\text{zwei Terme}}",
+    "\\underbrace{x^{1}+x_{2}}_{\\text{zwei Terme}}"
+   ],
+   "right": 1,
+   "why": "Für die Zielanzeige müssen die Befehle und die jeweiligen Klammergruppen zusammenpassen."
+  }
+ ]
+};
+for (const mode of ['build','fix','know']) decks[mode].push(...additionalDecks[mode]);
+const levels=['easy','medium','hard'];
+const trainingDecks={};
+for (const mode of ['build','fix','know']) {
+ trainingDecks[mode]={};
+ for(const level of levels) trainingDecks[mode][level]=decks[mode].filter(entry=>entry.difficulty===level);
+ if(decks[mode].length!==100) throw Error('Falsche Aufgabenzahl für '+mode);
+}
 const labels={build:['SYNTAX / SCHREIBEN','Formeln schreiben'],fix:['DEBUG / KORRIGIEREN','Fehler im Code finden'],know:['LOGIK / VERSTEHEN','Regeln verstehen']};
-const state={mode:'build',index:{build:0,fix:0,know:0},selected:null,feedback:null,renderSeq:0};
+const state={mode:'build',difficulty:{build:'easy',fix:'easy',know:'easy'},index:{build:{easy:0,medium:0,hard:0},fix:{easy:0,medium:0,hard:0},know:{easy:0,medium:0,hard:0}},selected:null,feedback:null,renderSeq:0};
 const $=id=>document.getElementById(id);
-const task=()=>decks[state.mode][state.index[state.mode]];
+const currentDeck=()=>trainingDecks[state.mode][state.difficulty[state.mode]];
+const task=()=>currentDeck()[state.index[state.mode][state.difficulty[state.mode]]];
 const normalize=s=>(s||'').replace(/\s+/g,'').replace(/\\dfrac/g,'\\frac');
 function readyMath(){return window.MathJax?.startup?.promise || Promise.resolve();}
 function renderMath(el,math){const seq=++state.renderSeq;el.textContent=math?'Wird dargestellt …':'—';if(!math) return; readyMath().then(()=>{if(!el.isConnected)return;try{const node=window.MathJax.tex2svg(math,{display:true});if(!el.isConnected)return;el.replaceChildren(node); }catch(err){el.textContent='Vorschau nicht möglich: '+String(err.message||err);el.classList.add('math-error');}}).catch(()=>{el.textContent=math;});}
@@ -112,19 +3396,19 @@ let updateTimer;
 function preview(){const value=state.mode==='lab'?$('labInput').value:$('answer').value;const target=state.mode==='lab'?'labPreview':'liveMath';const el=$(target);el.classList.remove('math-error');clearTimeout(updateTimer);const expression=value.replace(/^\s*\$|\$\s*$/g,'').replace(/^\\\[/,'').replace(/\\\]$/,'');updateTimer=setTimeout(()=>{renderMath(el,expression);if(state.mode==='lab')renderMath($('liveMath'),expression);},220);if(state.mode==='lab')$('labStatus').textContent=value.trim()?'Formel lokal aus deinem Code erzeugt.':'Gib eine Formel ein.';}
 function clearFeedback(){const f=$('feedback');f.className='feedback';f.replaceChildren();}
 function showFeedback(kind,title,body,code){const f=$('feedback');f.className='feedback show '+kind;f.replaceChildren();const strong=document.createElement('strong');strong.textContent=title;f.appendChild(strong);const span=document.createElement('span');span.textContent=body;f.appendChild(span);if(code!==undefined){const c=document.createElement('code');c.className='answer-block';c.textContent=code;f.appendChild(c);}}
-function renderTask(){const t=task();$('modeLine').textContent=labels[state.mode][0];$('sectionTitle').textContent=labels[state.mode][1];$('taskCode').textContent='SYNTAX LAB / '+(state.mode==='build'?'CODE':state.mode==='fix'?'DEBUG':'LOGIC');$('taskTitle').textContent=t.title;$('prompt').textContent=t.prompt;$('targetWrap').classList.toggle('hidden',!t.render);if(t.render){$('targetMath').classList.remove('math-error');renderMath($('targetMath'),t.render);}const bad=$('badCode');bad.classList.toggle('hidden',!t.bad);bad.textContent=t.bad||'';$('writeArea').classList.toggle('hidden',state.mode==='know');$('choiceList').classList.toggle('hidden',state.mode!=='know');$('answer').value='';state.selected=null;clearFeedback();$('liveMath').textContent='—';$('hint').style.display=state.mode==='know'?'none':'';if(state.mode==='know'){const list=$('choiceList');list.replaceChildren();t.choices.forEach((opt,i)=>{const b=document.createElement('button');b.type='button';b.className='choice';const letter=document.createElement('span');letter.className='letter';letter.textContent=String.fromCharCode(65+i);const txt=document.createElement('span');txt.className='answertext';txt.textContent=opt;b.append(letter,txt);b.addEventListener('click',()=>{state.selected=i;[...list.children].forEach((node,j)=>node.classList.toggle('selected',j===i));});list.appendChild(b);});}}
+function renderTask(){const t=task();const level=state.difficulty[state.mode];$('difficultyLabel').textContent=({easy:'LEICHT',medium:'MITTEL',hard:'SCHWER'})[level];document.querySelectorAll('#difficultyMenu button').forEach(b=>b.classList.toggle('active',b.dataset.difficulty===level));$('modeLine').textContent=labels[state.mode][0];$('sectionTitle').textContent=labels[state.mode][1];$('taskCode').textContent='SYNTAX LAB / '+(state.mode==='build'?'CODE':state.mode==='fix'?'DEBUG':'LOGIC');$('taskTitle').textContent=t.title;$('prompt').textContent=t.prompt;$('targetWrap').classList.toggle('hidden',!t.render);if(t.render){$('targetMath').classList.remove('math-error');renderMath($('targetMath'),t.render);}const bad=$('badCode');bad.classList.toggle('hidden',!t.bad);bad.textContent=t.bad||'';$('writeArea').classList.toggle('hidden',state.mode==='know');$('choiceList').classList.toggle('hidden',state.mode!=='know');$('answer').value='';state.selected=null;clearFeedback();$('liveMath').textContent='—';$('hint').style.display=state.mode==='know'?'none':'';if(state.mode==='know'){const list=$('choiceList');list.replaceChildren();t.choices.forEach((opt,i)=>{const b=document.createElement('button');b.type='button';b.className='choice';const letter=document.createElement('span');letter.className='letter';letter.textContent=String.fromCharCode(65+i);const txt=document.createElement('span');txt.className='answertext';txt.textContent=opt;b.append(letter,txt);b.addEventListener('click',()=>{state.selected=i;[...list.children].forEach((node,j)=>node.classList.toggle('selected',j===i));});list.appendChild(b);});}}
 function check(){const t=task();if(state.mode==='know'){if(state.selected===null){showFeedback('warn','Bitte eine Antwort wählen','Wähle zuerst eine Möglichkeit.');return;}showFeedback(state.selected===t.right?'ok':'warn',state.selected===t.right?'Das stimmt.':'Das passt noch nicht.',(state.selected===t.right?'':'Richtig ist '+String.fromCharCode(65+t.right)+'. ')+t.why);return;}const ans=$('answer').value.trim();if(!ans){showFeedback('warn','Noch keine Eingabe','Schreibe zuerst eine Antwort in den Editor.');return;}let ok=t.answers.some(a=>normalize(a)===normalize(ans));showFeedback(ok?'ok':'warn',ok?'Syntax stimmt.':'Noch nicht ganz.',ok?t.why:'Prüfe besonders die Backslashes, die Klammergruppen und – bei Gleichungen – die &-Zeichen.');}
 function hint(){const t=task();showFeedback('','Hinweis',t.hint||t.why);}
 function solution(){const t=task();if(state.mode==='know'){showFeedback('','Erklärung',t.why,'Antwort '+String.fromCharCode(65+t.right)+': '+t.choices[t.right]);return;}showFeedback('','Beispiellösung',t.why,t.answers[0]);}
-function next(){state.index[state.mode]=(state.index[state.mode]+1)%decks[state.mode].length;renderTask();$('answer').focus({preventScroll:true});}
-function setMode(mode){state.mode=mode;document.querySelectorAll('.mode').forEach(b=>{b.classList.toggle('active',b.dataset.mode===mode);b.setAttribute('aria-pressed',b.dataset.mode===mode?'true':'false');});$('quizPanel').classList.toggle('hidden',mode==='lab');$('labPanel').classList.toggle('hidden',mode!=='lab');if(mode==='lab'){preview();$('labInput').focus({preventScroll:true});}else renderTask();}
-function addAtCursor(area,snip){if(snip==='align')snip=String.raw`\begin{aligned}
-x &= 1 \\
-x &= 2
-\end{aligned}`;const start=area.selectionStart??area.value.length,end=area.selectionEnd??area.value.length;area.value=area.value.slice(0,start)+snip+area.value.slice(end);area.selectionStart=area.selectionEnd=start+snip.length;area.focus();preview();}
+function next(){const level=state.difficulty[state.mode];state.index[state.mode][level]=(state.index[state.mode][level]+1)%currentDeck().length;renderTask();$('answer').focus({preventScroll:true});}
+function setMode(mode){closeDifficultyMenu();state.mode=mode;document.querySelectorAll('.mode').forEach(b=>{b.classList.toggle('active',b.dataset.mode===mode);b.setAttribute('aria-pressed',b.dataset.mode===mode?'true':'false');});$('quizPanel').classList.toggle('hidden',mode==='lab');$('labPanel').classList.toggle('hidden',mode!=='lab');if(mode==='lab'){preview();$('labInput').focus({preventScroll:true});}else renderTask();}
+function closeDifficultyMenu(){ $('difficultyMenu').classList.add('hidden');$('difficultyToggle').setAttribute('aria-expanded','false');}
+$('difficultyToggle').addEventListener('click',ev=>{ev.stopPropagation();const willOpen=$('difficultyMenu').classList.contains('hidden');$('difficultyMenu').classList.toggle('hidden',!willOpen);$('difficultyToggle').setAttribute('aria-expanded',String(willOpen));});
+document.querySelectorAll('#difficultyMenu button').forEach(b=>b.addEventListener('click',()=>{const level=b.dataset.difficulty;if(!levels.includes(level))return;state.difficulty[state.mode]=level;closeDifficultyMenu();renderTask();}));
+document.addEventListener('click',ev=>{if(!$('difficultyWrap').contains(ev.target))closeDifficultyMenu();});
+document.addEventListener('keydown',ev=>{if(ev.key==='Escape')closeDifficultyMenu();});
 document.querySelectorAll('.mode').forEach(btn=>btn.addEventListener('click',()=>setMode(btn.dataset.mode)));
 $('check').addEventListener('click',check);$('hint').addEventListener('click',hint);$('solution').addEventListener('click',solution);$('next').addEventListener('click',next);$('answer').addEventListener('input',preview);$('labInput').addEventListener('input',preview);$('renderLab').addEventListener('click',preview);$('clearLab').addEventListener('click',()=>{$('labInput').value='';preview();$('labInput').focus();});
-document.querySelectorAll('#keys .key,#labKeys .key').forEach(btn=>btn.addEventListener('click',()=>addAtCursor(btn.closest('#labKeys')?$('labInput'):$('answer'),btn.dataset.insert)));
 document.querySelectorAll('textarea').forEach(area=>area.addEventListener('keydown',ev=>{if(ev.key==='Enter'&&(ev.ctrlKey||ev.metaKey)){ev.preventDefault();if(state.mode==='lab')preview();else check();}}));
 renderTask(); readyMath().then(()=>{if(state.mode==='lab')preview();else renderTask();});
 })();
